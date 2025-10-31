@@ -1,9 +1,9 @@
 # Site settings
-title:              Robotics Portfolio
-email:              nolanknight133@icloud.com
-description:        "Portfolio for Robotics at Northwestern University"
-url:                "https://<username>.github.io"
-baseurl:            "/nolanknight" #repo name
+title: Nolan Knight
+description: My Professional Portfolio
+url: "https://ncknight-un.github.io"
+baseurl: ""   # user sites always have empty baseurl
+theme: jekyll-theme-midnight
 
 # File structure settings
 image_path:         /public/images
@@ -11,9 +11,6 @@ image_path:         /public/images
 # Build settings
 markdown:           kramdown
 permalink:          pretty
-
-#Theme: 
-theme: jekyll-theme-midnight
 
 # Collection definitions and settings
 collections:
