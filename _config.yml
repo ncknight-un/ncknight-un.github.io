@@ -1,9 +1,9 @@
 # Site settings
-title:              Portfolio Template
-email:              your-email@domain.com
-description:        "Portfolio template for students in the MSR program at Northwestern University"
-url:                "http://localhost:4000"
-baseurl:            /msr-student-template
+title:              Robotics Portfolio
+email:              nolanknight133@icloud.com
+description:        "Portfolio for Robotics at Northwestern University"
+url:                "http://NolanKnight_Robotics.com"
+baseurl:            /Portfolio
 
 # File structure settings
 image_path:         /public/images
@@ -11,6 +11,9 @@ image_path:         /public/images
 # Build settings
 markdown:           kramdown
 permalink:          pretty
+
+#Theme: 
+theme: jekyll-theme-midnight
 
 # Collection definitions and settings
 collections:
