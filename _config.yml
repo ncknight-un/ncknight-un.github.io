@@ -2,8 +2,8 @@
 title:              Robotics Portfolio
 email:              nolanknight133@icloud.com
 description:        "Portfolio for Robotics at Northwestern University"
-url:                "http://NolanKnight_Robotics.com"
-baseurl:            /Portfolio
+url:                "https://<username>.github.io"
+baseurl:            "/nolanknight" #repo name
 
 # File structure settings
 image_path:         /public/images
