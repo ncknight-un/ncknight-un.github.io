@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Contact
-order: 3
+order: 2
 permalink: /contact/
 ---
 

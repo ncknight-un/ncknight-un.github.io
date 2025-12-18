@@ -22,7 +22,7 @@ $mq: ( $mobile:$columns, $tablet:$columns, $desktop:$columns );
   margin: 0 auto;
 }
 
- {
+.row {
   display: flex;
   flex-wrap: wrap;
   flex: 0 1 auto;
