@@ -19,20 +19,28 @@
 }
 
 .page__head {
-  
-  .page-image {
-    background-size: contain; // keeps full image visible without stretching
-    background-repeat: no-repeat;
-    background-position: center;
-    background-color: $light-gray;
-    &:after {
-      content: "";
-      display: table;
-      width: 100%;
-      min-height: 150px;   // smaller minimum height
-      padding-top: 30%;    // reduces responsive height proportion
-    }
+  display: flex;
+  justify-content: center; // centers children horizontally
+    
+.page-image {
+  width: 50%; // bigger width
+  max-width: 400px; // optional: cap max width
+  flex-shrink: 0;
+  display: block;
+  position: relative;
+  overflow: hidden;
+  background: $light-gray url('Nolan_photo.jpeg') no-repeat center center;
+  background-size: contain;
+  aspect-ratio: 16 / 16;
+  max-height: 400px; // increase max-height as well
+  border-radius: 8px;
+  transition: opacity 0.3s;
+
+  &:hover {
+    opacity: 0.9;
   }
+}
+
 
   .page-video {
     position: relative;
@@ -55,7 +63,7 @@
 }
 
 .page {
-  margin: 40px auto;
+  margin: 20px auto;
 
   img {
     margin: 30px 0;
