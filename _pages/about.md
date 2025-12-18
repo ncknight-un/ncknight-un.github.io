@@ -1,12 +1,12 @@
 ---
 layout: page
 title: About
-order: 1
+order: 2
 permalink: /about/
 image: Nolan_photo.jpeg
 ---
 
-Hi, my name is Nolan Knight. 
+Hi! I am an MS Robotics Student at Northwestern University. I am currently working...
 
 ***
 
