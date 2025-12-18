@@ -1,6 +1,6 @@
 .post-title-box {
   padding: 80px 0;
-  border-top: 1px solid $light-gray;
+  border-top: 1px solid $black;
 
   .post-title {
     margin-bottom: 10px;
@@ -10,7 +10,8 @@
     line-height: 70px;
   }
 
-  .post__date {
+  .post__date {  
+    // border-top: 1px solid $brand-color;
     font-weight: 700;
   }
 
@@ -34,7 +35,7 @@
     font-weight: 700;
     
     .author-name {
-      color: $gray;
+      color: $dark;
       border-bottom: 1px solid transparent;
       &:hover {
         border-bottom: 1px solid $gray;
@@ -63,32 +64,40 @@
 }
 
 .post-image {
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-color: $light-gray;
-  &:after {
-    content: "";
-    display: table;
-    width: 100%;
-    min-height: 300px;
-    padding-top: 50%;
-  }
+  width: 60%;              // same width as video
+  max-width: 600px;        // optional max width
+  margin: 0 auto;          // center horizontally
+  background-color: $light-gray;
+
+  // Modern aspect ratio
+  aspect-ratio: 16 / 9;
+  
+  // Image as background
+  background-image: url('your-image.jpg');
+  background-size: cover;  // fills the container, cropping if needed
+  background-position: center;
+  background-repeat: no-repeat;
+
+  display: block;           // ensures block behavior
 }
 
 .post-video {
   position: relative;
-  width: 100%;
-  padding-top: 50%;
+  width: 60%;          // smaller width
+  max-width: 600px;    // optional max
+  margin: 0 auto;      // center horizontally
   background: $light-gray;
   overflow: hidden;
+  // Modern aspect ratio (16:9)
+  aspect-ratio: 16 / 9;
+
 
   video {
-    position: absolute;
-    inset: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+    width: 100%;        // fills container width
+    height: auto;       // keeps aspect ratio
+    display: block;     // avoids inline spacing
+    margin: 0 auto;     // center video inside container
+    object-fit: contain; // ensures full video visible without cropping
   }
 }
 
@@ -133,7 +142,7 @@
 
       a {
         font-size: 18px;
-        color: $gray;
+        color: $brand-color;
         &:hover {
           color: $dark;
         }
@@ -142,60 +151,96 @@
   }
 }
 
+.divline {
+  border-top: 4px solid $brand-color;
+}
+
 .post__navigation {
   display: flex;
-  align-items: baseline;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
   margin-bottom: 80px;
   padding-bottom: 80px;
-  border-bottom: 1px solid $light-gray;
+  border-bottom: 1px solid $black;
 
   .prev,
   .next {
-    flex: 1 0 50%;
-    &:last-child {
-      padding-right: 0;
+    flex: 1 1 48%;          // default width when both exist
+    max-width: 48%;
+    margin-bottom: 40px;
+    
+    &.single {              // class for when only one exists
+      flex: 0 0 60%;         // smaller width
+      max-width: 600px;      // optional max
+      margin: 0 auto 40px;   // center horizontally
     }
 
     .post__nav__image {
       display: block;
-      margin-bottom: 40px;
-      background-position: center;
-      background-size: cover;
+      width: 100%;
+      max-width: 100%;
+      margin: 0 auto;
       background-repeat: no-repeat;
-      background-color: $light-gray;
-      transition: .35s ease-in-out;
-      &:hover {
-        opacity: 0.9;
-      }
-      &:after {
-        content: "";
-        display: table;
-        width: 100%;
-        padding-bottom: 65%;
-      }
+      background-size: contain;   // make sure image fills the container
+      background-position: center;  // centers the image
+      overflow: hidden;
+      position: relative;       // needed for absolute children (if any)
+      
+      // Color for the extra space around the image
+      background-color: $light-gray;   // <-- this sets the container color
+
+      // Modern aspect ratio (16:9)
+      aspect-ratio: 16 / 9;
     }
 
+    .post__nav__video {
+      display: block;            // <a> is block so we can size it
+      width: 100%;               // full width of its container
+      max-width: 100%;
+      background-color: $light-gray;
+      overflow: hidden;
+
+      // Modern aspect ratio (16:9)
+      aspect-ratio: 16 / 9;
+
+      video {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;       // crop to fill container
+        display: block;          // remove inline spacing
+      }
+    }
+  
     .post__nav__title {
+      text-align: center;      // centers inline/inline-block children
       margin-bottom: 20px;
-      font-size: 27px;
+      font-size: 18px;
       line-height: 37px;
       text-transform: uppercase;
       letter-spacing: 2px;
-      text-align: center;
-      
+
       a {
-        display: inline-block;
-        max-width: 250px;
+        display: inline-block;  // allows wrapping
+        max-width: 100%;        // fills parent container
         padding: 0 10px;
-        vertical-align: middle;
-        white-space: nowrap;
-        overflow: hidden;
-        text-overflow: ellipsis;
+        white-space: normal;    // allow multiple lines
+        overflow: visible;
+        text-overflow: unset;
         color: $dark;
+
         &:hover {
           color: $black;
         }
       }
+    }
+
+    .prev__excerpt,
+    .next__excerpt {
+      width: 100%;
+      max-width: 400px;
+      margin: 0 auto;
+      text-align: center;
     }
   }
 
@@ -207,44 +252,30 @@
     padding-left: 10px;
   }
 
-  .prev__excerpt,
-  .next__excerpt {
-    width: 100%;
-    max-width: 400px;
-    margin: 0 auto;
-    text-align: center;
-  }
-
   @media only screen and (max-width: $tablet) {
-    flex-wrap: wrap;
-    
     .prev,
     .next {
       flex: 1 0 100%;
       padding: 0;
-    }
+      margin-bottom: 40px;
 
-    .next {
-      margin-top: 40px;
+      &.single {
+        flex: 1 0 100%;
+        margin: 0 auto 40px;
+      }
     }
   }
 
   @media only screen and (max-width: $mobile) {
     margin-bottom: 40px;
     padding-bottom: 40px;
-    .prev,
-    .next {
-      .post__nav__image {
-        margin-bottom: 20px;
-      }
-    }
   }
 }
 
-.comments {
-  margin-bottom: 80px;
+// .comments {
+//   margin-bottom: 80px;
 
-  @media only screen and (max-width: $mobile) {
-    margin-bottom: 40px;
-  }
-}
+//   @media only screen and (max-width: $mobile) {
+//     margin-bottom: 40px;
+//   }
+// }
