@@ -1,12 +1,12 @@
 .post-title-box {
-  padding: 80px 0;
+  padding: 40px 0;
   border-top: 1px solid $black;
 
   .post-title {
     margin-bottom: 10px;
     width: 500px;
     max-width: 100%;
-    font-size: 57px;
+    font-size: 48px;
     line-height: 70px;
   }
 
@@ -102,7 +102,7 @@
 }
 
 .post {
-  margin: 80px auto;
+  margin: 40px auto;
 
   &.post-no-image {
     margin: 0 auto 80px; 
@@ -127,6 +127,7 @@
 
 .post__share {
   display: flex;
+  padding: 10px 0;
 
   .share__title {
     margin-right: 10px;
@@ -152,7 +153,11 @@
 }
 
 .divline {
-  border-top: 4px solid $brand-color;
+  border: 0;
+  height: 1px;
+  background-color: $black;
+  margin-top: -40px;   /* Reduce space above */
+  margin-bottom: 40px; /* Space below for next content */
 }
 
 .post__navigation {
@@ -161,7 +166,7 @@
   justify-content: space-between;
   align-items: flex-start;
   margin-bottom: 80px;
-  padding-bottom: 80px;
+  padding-bottom: 0px;
   border-bottom: 1px solid $black;
 
   .prev,
