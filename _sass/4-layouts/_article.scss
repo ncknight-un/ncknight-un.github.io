@@ -1,0 +1,143 @@
+.row .article {
+  width: 100%;
+  flex: 0 0 100%;
+
+  .article__wrapper {
+    display: flex;
+    flex-direction: row; // media left, content right
+    flex-wrap: nowrap;   // one article per row
+    align-items: flex-start; // top align media and content
+    gap: 20px; // spacing between media and content
+    margin-bottom: 40px;
+    align-items: center;
+  }
+
+.article__video,
+.article__image {
+  width: 35%;
+  flex-shrink: 0;
+  display: block;
+  position: relative;
+  overflow: hidden;
+  background: $light-gray;
+  aspect-ratio: 16 / 9; // replaces &:after
+  max-height: 250px;    // desktop max-height
+  &:hover {
+    opacity: 0.9;
+  }
+
+  video {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+
+@media only screen and (max-width: 768px) {
+  .article__video {
+    max-height: 180px;
+    padding-top: 56.25%;
+  }
+}
+
+
+  .article__content {
+    width: 55%; // match remaining width
+    padding: 50px;
+    margin-left: -5%;
+    z-index: 1;
+    border-radius: 3px;
+    background: rgba(168, 165, 165, 0.98);
+    box-shadow: 0 1px 4px rgba(0,0,0,0.15);
+
+    .article__tag {
+      font-size: 12px;
+      letter-spacing: 0.5px;
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+
+    .article__title {
+      margin-bottom: 20px;
+      font-size: 30px;
+      
+      a {
+        color: $dark;
+        &:hover {
+          color: $black;
+        }
+      }
+    }
+
+    .article__excerpt {
+      margin-bottom: 20px;
+      font-size: 16px;
+      line-height: 26px;
+    }
+
+    .article__meta {
+      font-size: 12px;
+      line-height: 18px;
+      text-transform: uppercase;
+      color: $gray;
+    }
+
+    .article__footer {
+      display: flex;
+      align-items: center;
+
+      .read-more {
+        margin-left: auto;
+        padding-bottom: 5px;
+        font-size: 12px;
+        line-height: 18px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        border-bottom: 1px solid transparent;
+        color: $gray;
+        &:hover {
+          color: $dark;
+          border-color: $brand-color;
+        }
+      }
+    }
+  }
+
+  .article-without-image {
+    width: 100%;
+    margin-left: auto;
+  }
+
+  @media only screen and (max-width: $tablet) {
+    .article__wrapper {
+      flex-direction: column;
+    }
+
+    .article__image {
+      width: 100%;
+    }
+
+    .article__content {
+      width: 90%;
+      padding: 20px;
+      margin: -10% 0 0 0;
+    }
+
+    .article-without-image {
+      width: 90%;
+      margin: 0;
+    }
+  }
+
+  @media only screen and (max-width: $mobile) {
+    .article__content {
+
+      .article__title {
+        font-size: 27px;
+      }
+    }
+  }
+}

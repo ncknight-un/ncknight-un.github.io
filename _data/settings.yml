@@ -1,0 +1,47 @@
+#-------------------------------
+# General Site Settings
+title: Nolan Knight
+logo: NCK_Logo5.png
+description: Nolan Knight's Portfolio
+
+
+#-------------------------------
+# Author Settings
+author:
+  name: Nolan Christopher Knight
+  image: Nolan_photo.jpeg
+  say-hello: <strong>Nolan Knight</strong>
+  bio: Current MSR Student at Northwestern Univeristy in Evanston, IL
+
+
+#-------------------------------
+# Contact links
+# twitter: https://twitter.com/ # Add your Twitter handle
+# facebook: https://facebook.com/ # Add your Facebook handle
+# dribbble: https://dribbble.com/ # Add your Dribbble handle
+# instagram: https://instagram.com/ # Add your Instagram handle
+# pinterest: https://pinterest.com/ # Add your Pinterest handle
+github: https://github.com/ncknight-un
+linkedin: https://linkedin.com/in/nolan-knight-bu
+mail: nolanknight133@icloud.com
+
+
+#-------------------------------
+# # Comment Section (Disqus)
+# disqus-identifier: mr-brown # add your shortname for Disqus Comment. For example mr-brown
+
+
+#-------------------------------
+# Instagram Feed
+instafeed: False # To enable the instafeed, use the value true. To turn off use the value false.
+instagram-profile:
+
+
+#-------------------------------
+# Google Analytics
+google-analytics: # Add your identifier. For example UA-99631805-1.
+
+
+# #-------------------------------
+# # Newsletter
+# mailchimp: # Add your MailChimp form identifier. For example - blogenjoyfreedom.us16.list-manage.com/subscribe/post?u=cd56155d76ddeeb4c0bc4d080&amp;id=7a526cd13e
