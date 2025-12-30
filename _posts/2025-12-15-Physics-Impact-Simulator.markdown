@@ -1,13 +1,10 @@
 ---
 layout: post
 title:  "Physics Simulations: Dynamics"
-date:   2025-12-15 09:00:00 +0300
-# video: none
-image: Nolan_photo.jpeg
+date:   2025-12-01 09:00:00 +0300
+video: leg_sim.mp4
 tags:   Physics Impacts Python
 ---
-
-## Overview:
 
 During my Master’s in Robotics at Northwestern University...
 
@@ -21,31 +18,56 @@ During my Master’s in Robotics at Northwestern University...
 
 **Github Link:**  
 
-### Enclosure & CAD Designs:
-
 <div class="project-gallery">
 
   <div class="gallery-item">
-    <h4>Sorting Video Demo</h4>
+    <h4>Fixed-Leg Splits Simulation</h4>
     <video controls autoplay loop muted playsinline>
-      <source src="/images/Franka_Color_Sort.mp4" type="video/mp4">
+      <source src="/images/leg_sim.mp4" type="video/mp4">
       Your browser does not support the video tag.
     </video>
   </div>
   
   <div class="gallery-item">
-    <h4>Sorting Video Demo</h4>
+    <h4>3-Arm Pendulum Simulation</h4>
     <video controls autoplay loop muted playsinline>
-      <source src="/images/Franka_Color_Sort.mp4" type="video/mp4">
+      <source src="/images/3_pend.mp4" type="video/mp4">
       Your browser does not support the video tag.
     </video>
   </div>
+  
+  <div class="gallery-item">
+    <h4>Box Fixed-Pendulum Simulation</h4>
+    <video controls autoplay loop muted playsinline>
+      <source src="/images/box_pendulum.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+
+  <div class="gallery-item">
+    <h4>Single-Pend Impact Simulation</h4>
+    <video controls autoplay loop muted playsinline>
+      <source src="/images/sing_pend.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+
+  <div class="gallery-item">
+    <h4>Triple-Pend Impact Simulation</h4>
+    <video controls autoplay loop muted playsinline>
+      <source src="/images/trip_pend.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+</div>
 
 ---
 
 ## Skills Gained:
 
-- Ros 2 
+- Deeper understanding of Lagrangian Dynamics
+- Physics simulation using python
+- Animation techniques using python
 
 ---
 

@@ -1,12 +1,10 @@
 ---
 layout: post
 title:  "MicroController: Bio-Motor Activation"
-date:   2025-08-10 09:00:00 +0300
+date:   2023-05-10 09:00:00 +0300
 video: Fish_Controller.mp4
 tags:   Microcontrollers
 ---
-
-## Overview:
 
 During my Master’s in Biomedical Engineering at Purdue University, I took a Biosensors course where I designed a project meeting specific guidelines: it had to use a microcontroller, implement a biosensing application, and include processing or control of the biosignal data. I developed a “digital” fishtank in which the fish’s movement is driven by motor activation, triggered by isolating the QRS peaks of a heartbeat signal.
 

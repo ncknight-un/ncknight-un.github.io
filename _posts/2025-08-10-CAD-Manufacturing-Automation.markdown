@@ -6,8 +6,6 @@ video: Layout1.mp4
 tags:   Automation Manufacturing Cobots CAD Milling Lathe
 ---
 
-## Overview:
-
 During my contract work for GM Diecron, I gained practical experience in automation-focused manufacturing projects within the aerospace industry. I assisted in designing floor plans and machine hardware that enabled the integration of collaborative robots to improve efficiency and reduce manual labor.
 
 **Company:** GM Diecron  

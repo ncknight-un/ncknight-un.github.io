@@ -284,7 +284,7 @@
   margin-top: 20px;
 
   .gallery-item {
-    flex: 1 1 calc(50% - 20px); // 2 items per row, subtract gap
+    flex: 1 1 calc(50% - 20px); // 2 items per row
     text-align: center;
 
     h4 {
@@ -295,16 +295,18 @@
       letter-spacing: 1px;
     }
 
-    img, video {
-      width: 100%;         // fills the container
-      max-width: 480px;    // increased from 250px → bigger images
-      height: auto;
-      border: 1px solid #ccc;
+    img,
+    video {
+      width: 400px;        // fixed rectangle width
+      height: 300px;       // fixed rectangle height
+      object-fit: scale-down;   // fill rectangle, cropping if needed
       border-radius: 6px;
       margin: 0 auto;
+      display: block;
     }
   }
 }
+
 
 // Optional: make it responsive for smaller screens
 @media (max-width: 600px) {
