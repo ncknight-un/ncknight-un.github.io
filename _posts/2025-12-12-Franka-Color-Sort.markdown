@@ -26,7 +26,7 @@ During my Master’s in Robotics at Northwestern University...
   <div class="gallery-item">
     <h4>Sorting Video Demo</h4>
     <video controls autoplay loop muted playsinline>
-      <source src="/images/Color_Sort.mp4" type="video/mp4">
+      <source src="/images/Franka_Color_Sort.mp4" type="video/mp4">
       Your browser does not support the video tag.
     </video>
   </div>

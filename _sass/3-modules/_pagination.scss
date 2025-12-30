@@ -30,7 +30,7 @@
 
   .next-link,
   .previous-link {
-    color: $dark;
+    color: $white;
 
     &:hover {
       color: $black;
@@ -38,7 +38,7 @@
   }
 
   .disabled {
-    color: $gray;
+    color: $white;
     cursor: not-allowed;
   }
 
