@@ -5,3 +5,4 @@ _site
 Gemfile.lock
 # Ignore the large video file
 images/Franka_Color_Sort.mp4
+images/Color_Sort.mp4
