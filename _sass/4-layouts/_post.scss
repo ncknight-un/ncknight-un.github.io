@@ -4,8 +4,8 @@
 
   .post-title {
     margin-bottom: 10px;
-    width: 500px;
-    max-width: 100%;
+    width: 100%;
+    max-width: 900px; // or remove entirely
     font-size: 48px;
     line-height: 70px;
   }
@@ -276,6 +276,43 @@
     padding-bottom: 40px;
   }
 }
+
+.project-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; // space between items
+  margin-top: 20px;
+
+  .gallery-item {
+    flex: 1 1 calc(50% - 20px); // 2 items per row, subtract gap
+    text-align: center;
+
+    h4 {
+      margin-top: 10px;
+      margin-bottom: 3px;
+      font-size: 24px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    img, video {
+      width: 100%;         // fills the container
+      max-width: 480px;    // increased from 250px → bigger images
+      height: auto;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      margin: 0 auto;
+    }
+  }
+}
+
+// Optional: make it responsive for smaller screens
+@media (max-width: 600px) {
+  .project-gallery .gallery-item {
+    flex: 1 1 100%; // 1 per row on mobile
+  }
+}
+
 
 // .comments {
 //   margin-bottom: 80px;
