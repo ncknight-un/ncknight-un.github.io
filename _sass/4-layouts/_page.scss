@@ -89,3 +89,41 @@
     }
   }
 }
+
+.project-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; // space between items
+  margin-top: 20px;
+
+  .gallery-item {
+    flex: 1 1 calc(50% - 20px); // 2 items per row
+    text-align: center;
+
+    h4 {
+      margin-top: 10px;
+      margin-bottom: 3px;
+      font-size: 24px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    img,
+    video {
+      width: 400px;        // fixed rectangle width
+      height: 300px;       // fixed rectangle height
+      object-fit: scale-down;   // fill rectangle, cropping if needed
+      border-radius: 6px;
+      margin: 0 auto;
+      display: block;
+    }
+  }
+}
+
+
+// Optional: make it responsive for smaller screens
+@media (max-width: 600px) {
+  .project-gallery .gallery-item {
+    flex: 1 1 100%; // 1 per row on mobile
+  }
+}

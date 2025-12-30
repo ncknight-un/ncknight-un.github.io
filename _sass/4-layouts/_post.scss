@@ -166,6 +166,7 @@
   justify-content: space-between;
   align-items: flex-start;
   margin-bottom: 80px;
+  margin-top: -30px;
   padding-bottom: 0px;
   border-bottom: 1px solid $black;
 
@@ -183,7 +184,7 @@
 
     .post__nav__image {
       display: block;
-      width: 100%;
+      width: 60%;
       max-width: 100%;
       margin: 0 auto;
       background-repeat: no-repeat;
@@ -201,8 +202,9 @@
 
     .post__nav__video {
       display: block;            // <a> is block so we can size it
-      width: 100%;               // full width of its container
+      width: 60%;               // full width of its container
       max-width: 100%;
+      margin: 0 auto;
       background-color: $light-gray;
       overflow: hidden;
 
@@ -219,7 +221,7 @@
   
     .post__nav__title {
       text-align: center;      // centers inline/inline-block children
-      margin-bottom: 20px;
+      margin-bottom: -40px;
       font-size: 18px;
       line-height: 37px;
       text-transform: uppercase;

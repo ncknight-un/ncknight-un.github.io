@@ -46,6 +46,7 @@ During my Master’s in Robotics at Northwestern University...
       Your browser does not support the video tag.
     </video>
   </div>
+</div>
 
 
 ---
