@@ -2,7 +2,7 @@
 layout: post
 title:  "Franka: Color Sorting"
 date:   2025-12-12 09:00:00 +0300
-video: Franka_Color_Sort.mp4
+video: Final_Video_Robot.mp4
 tags:   Ros_2 Git Python Franka
 ---
 
@@ -26,7 +26,7 @@ During my Master’s in Robotics at Northwestern University...
   <div class="gallery-item">
     <h4>Sorting Video Demo</h4>
     <video controls autoplay loop muted playsinline>
-      <source src="/images/Franka_Color_Sort.mp4" type="video/mp4">
+      <source src="/images/Final_Video_Robot.mp4" type="video/mp4">
       Your browser does not support the video tag.
     </video>
   </div>
