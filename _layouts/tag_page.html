@@ -1,5 +1,6 @@
 ---
 layout: default
+tag: my-tag
 ---
 
 <div class="archive-head">
@@ -9,18 +10,9 @@ layout: default
 </div>
 
 <div class="archive-projects container">
-  {% for post in page.posts %}
+  {% assign posts_with_tag = site.posts | where_exp:"post","post.tags contains page.tag" %}
+  {% for post in posts_with_tag %}
     <div class="project-card">
-      {% if post.image %}
-        <img src="{{ post.image }}" alt="{{ post.title }}">
-      {% endif %}
-
-      {% if post.video %}
-        <video controls>
-          <source src="{{ post.video }}" type="video/mp4">
-          Your browser does not support the video tag.
-        </video>
-      {% endif %}
       <div class="project-info">
         <h3>{{ post.title }}</h3>
         <a href="{{ post.url }}">Read more</a>

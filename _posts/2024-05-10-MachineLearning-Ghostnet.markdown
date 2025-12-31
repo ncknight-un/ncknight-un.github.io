@@ -3,6 +3,7 @@ layout: post
 title:  "Machine Learning - GhostNet Reimplementation"
 date:   2024-05-10 09:00:00 +0300
 image: NCK_Logo5.png
+video:
 tags:   Pytorch
 ---
 
