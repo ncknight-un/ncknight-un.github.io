@@ -1,12 +1,15 @@
 .archive-projects {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 30px;
+  grid-template-columns: 1fr; /* single column */
+  justify-items: center;  
+  gap: 20px;
   padding: 20px 0;
 }
 
 .project-card {
-  background: #fff;
+  max-width: 600px;
+  width: 100%;
+  background: $brand-color;
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.05);
   overflow: hidden;
@@ -31,11 +34,11 @@
 
     p {
       margin: 0 0 10px;
-      color: #555;
+      color: $white;
     }
 
     a {
-      color: #007acc;
+      color: $white;
       text-decoration: none;
       font-weight: 600;
     }
@@ -43,7 +46,7 @@
 }
 
 .archive-head {
-  padding: 80px 0;
+  padding: 30px 0;
   margin-bottom: 60px;
   background: #f5f5f5;
   border-bottom: 1px solid #ddd;
