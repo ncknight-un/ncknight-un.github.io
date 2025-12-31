@@ -35,12 +35,15 @@ During my Master’s in Biomedical Engineering at Purdue University...
 
 ---
 
-## Skills Gained:
 
-- 
+## Skills Gained:  
+
+- f
+
 
 ---
 
-## Key Takeaway:
+
+## Key Takeaway:  
 
 This experience allowed me to develop...
