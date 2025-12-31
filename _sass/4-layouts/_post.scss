@@ -290,8 +290,8 @@
     text-align: center;
 
     h4 {
-      margin-top: 10px;
-      margin-bottom: 3px;
+      margin-top: -20px;
+      margin-bottom: -10px;
       font-size: 24px;
       text-transform: uppercase;
       letter-spacing: 1px;
@@ -299,10 +299,12 @@
 
     img,
     video {
-      width: 400px;        // fixed rectangle width
+      width: 375px;        // fixed rectangle width
       height: 300px;       // fixed rectangle height
-      object-fit: scale-down;   // fill rectangle, cropping if needed
-      border-radius: 6px;
+      transform: scale(0.9);
+      transform-origin: center;
+      object-fit: fill;
+      border-radius: 10px;
       margin: 0 auto;
       display: block;
     }

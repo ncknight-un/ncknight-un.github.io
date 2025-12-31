@@ -3,7 +3,7 @@ layout: post
 title:  "Physics Simulations: Dynamics"
 date:   2025-12-01 09:00:00 +0300
 video: leg_sim.mp4
-tags:   Physics Impacts Python
+tags:   Physics Impacts Python Lagrangian Mechanics
 ---
 
 During my Master’s in Robotics at Northwestern University...

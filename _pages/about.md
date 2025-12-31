@@ -8,42 +8,54 @@ image: Nolan_photo.jpeg
 
 Hi! I am an MS Robotics student at Northwestern University, starting my second quarter in the program. This quarter, I’m focusing on Mechatronics, SLAM, and Machine Learning/AI, while also working on a personal robotics project which I hope to have up here soon!
 
-My background spans robotics, automation, and biomedical engineering. I’m passionate about leveraging technology to solve real-world problems that improve human interaction and quality of life. To achieve this, I’m constantly exploring new tools, hardware, and software in the field.
+My background spans robotics, automation, and biomedical engineering. I’m passionate about learning how to leverage technology to solve real-world problems that improve human interaction and quality of life. To achieve this, I’m constantly exploring new tools, hardware, and software in the field.
 
 ***
 
 ### Education
 
 <h5 style="margin-bottom: -0.5em;">Northwestern University</h5>
-<small>2025 - 2026</small>  
-MS in Robotics  
+<small>2025 – 2026</small><br>
+<div style="margin: 0; padding: 0;"><strong>MS in Robotics</strong></div>
+<ul style="margin: 0; padding-left: 1.2em;">
+  <li style="margin: 0;">Focus: Robotics Perception, Control Systems, Embedded Systems, Machine Learning</li>
+</ul>
 
-<hr style="border-top: 1px solid #ffffffff; width: 50%; text-align: left;">
+<hr style="border-top: 1px solid #ffffffff; width: 50%; margin-top: 1.5em; margin-bottom: 0.6em;">
 
+<h5 style="margin-bottom: -0.5em;">Purdue University – Main Campus</h5>
+<small>2024 – 2025</small><br>
+<div style="margin: 0; padding: 0;"><strong>MS in Biomedical Engineering</strong></div>
+<ul style="margin: 0; padding-left: 1.2em;">
+  <li style="margin: 0;">Focus: Signal Processing, Computational Modeling, Medical Imaging, Machine Learning</li>
+</ul>
 
-<h5 style="margin-bottom: -0.5em;">Purdue University - Main Campus </h5>
-<small>2024 - 2025</small>  
-MS in Biomedical Engineering  
+<hr style="border-top: 1px solid #ffffffff; width: 50%; margin-top: 1.5em; margin-bottom: 0.6em;">
 
-<hr style="border-top: 1px solid #ffffffff; width: 50%; text-align: left;">
+<h5 style="margin-bottom: -0.5em;">Purdue University – Indianapolis</h5>
+<small>2024 – 2025</small><br>
+<div style="margin: 0; padding: 0;"><strong>BS in Biomedical Engineering</strong></div>
+<ul style="margin: 0; padding-left: 1.2em;">
+  <li style="margin: 0;">Focus: Biomechanics, Medical Physiology, Bio-Instrumentation</li>
+  <li style="margin: 0;">Tau Beta Pi Member</li>
+</ul>
 
+<hr style="border-top: 1px solid #ffffffff; width: 50%; margin-top: 1.5em; margin-bottom: 0.6em;">
 
-<h5 style="margin-bottom: -0.5em;">Purdue University - Indianapolis </h5>
-<small>2024 - 2025</small>  
-BS in Biomedical Engineering  
-
-- Tau Beta Pi Member
-
-<hr style="border-top: 1px solid #ffffffff; width: 50%; text-align: left;">
-
-
-<h5 style="margin-bottom: -0.5em;">Butler University </h5>
-<small>2019 - 2024</small>  
-BS in Computer Science
-- Butler University Engineering Club - President 2022 - Represented a club of 50+ members, organizing biweekly meetings
-and monthly networking events.
-- Sigma Nu Fraternity (Butler University) - Housing Manager 2021 - Managed and coordinated with directors for
-maintenance and repairs and was point person for chef-house relations with more than 80 active members.
+<h5 style="margin-bottom: -0.5em;">Butler University</h5>
+<small>2019 – 2024</small><br>
+<div style="margin: 0; padding: 0;"><strong>BS in Computer Science</strong></div>
+<ul style="margin: 0; padding-left: 1.2em;">
+  <li style="margin: 0;">Focus: Data Structures, Algorithms, Software Engineering</li>
+  <li style="margin: 0;">
+    Butler University Engineering Club — President (2022)<br>
+    Led 50+ members; organized biweekly technical meetings and monthly industry networking events
+  </li>
+  <li style="margin: 0;">
+    Sigma Nu Fraternity — Housing Manager (2021)<br>
+    Managed facilities coordination, maintenance scheduling, and vendor relations for 80+ residents
+  </li>
+</ul>
 
 ***
 
@@ -55,19 +67,6 @@ maintenance and repairs and was point person for chef-house relations with more 
 ***
 
 ## Extracurrucular Media Gallary:
-
-### Personal CAD/3D Prints
-
-<div class="project-gallery">
-
-  <div class="gallery-item">
-    <h4>Mill Fixture Print</h4>
-    <img src="/images/print1.jpg" alt="Print 1">
-  </div>
-
-
-</div>
-<br>
 
 ### Sports & Hobbies
 
@@ -88,12 +87,17 @@ maintenance and repairs and was point person for chef-house relations with more 
     <img src="/images/bike.jpg" alt="Bike">
   </div>
 </div>
-<br>
 
 ### Woodworking / Furniture Building
 <div class="project-gallery">
+
   <div class="gallery-item">
-    <h4>Custom Granite Bar</h4>
+    <h4>Custom Bar</h4>
+    <img src="/images/bar2.jpg" alt="Bar 2">
+  </div>
+
+  <div class="gallery-item">
+    <h4>Custom Bar - Granite Top</h4>
     <img src="/images/f6.jpg" alt="Bar">
   </div>
 
@@ -120,17 +124,69 @@ maintenance and repairs and was point person for chef-house relations with more 
 </div>
 <br>
 
+### Fun 3D Prints/Personal CAD Projects
+
+<div class="project-gallery">
+
+  <div class="gallery-item">
+    <h4>Mill Fixture Print</h4>
+    <img src="/images/print1.jpg" alt="Print 1">
+  </div>
+
+  <div class="gallery-item">
+    <h4>Pendulum Cart Model</h4>
+    <img src="/images/Todd_Cart.jpg" alt="Todd Cart">
+  </div>
+      
+  <div class="gallery-item">
+    <h4>Travel Fishing Rod Model</h4>
+    <img src="/images/fishing.jpg" alt="Fishing Rod">
+  </div>
+
+  <div class="gallery-item">
+    <h4>Travel Fishing Rod Demo </h4>
+    <img src="/images/fishing2.jpeg" alt="Rishing Rod 2">
+  </div>
+</div>
+<br>
+
+
 ### Gardening
 
 <div class="project-gallery">
 
   <div class="gallery-item">
-    <h4>Gardening #1</h4>
-    <img src="/images/plant1.jpg" alt="G1">
+    <img src="/images/flower2.jpeg" alt="G2">
   </div>
 
+  <div class="gallery-item">
+    <img src="/images/flower4.jpeg" alt="G4">
+  </div>
 
+  <div class="gallery-item">
+    <img src="/images/flower5.jpeg" alt="G5">
+  </div>
 
+  <div class="gallery-item">
+    <img src="/images/flower6.jpeg" alt="G6">
+  </div>
+
+  <div class="gallery-item">
+    <img src="/images/flower3.jpeg" alt="G3">
+  </div>
+
+  <div class="gallery-item">
+    <img src="/images/flower7.jpeg" alt="G7">
+  </div>
+
+  <div class="gallery-item">
+    <img src="/images/flower8.jpeg" alt="G8">
+  </div>
+
+  <div class="gallery-item">
+    <img src="/images/flower9.jpeg" alt="G9">
+  </div>
+  
 </div>
 <br>
 
