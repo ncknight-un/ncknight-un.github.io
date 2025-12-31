@@ -29,7 +29,6 @@ This project demonstrates end-to-end robotic manipulation, combining perception,
 **Note: I have shared all CAD files to this public repository! Feel free to build off of them!**
 
 ### Project Demo Vidoes: 
-<br>
 <div class="project-gallery">
 
   <div class="gallery-item">
@@ -47,13 +46,25 @@ This project demonstrates end-to-end robotic manipulation, combining perception,
       Your browser does not support the video tag.
     </video>
   </div>
+
+  <div class="gallery-item">
+    <h4>Rviz Visualization</h4>
+    <video controls autoplay loop muted playsinline>
+      <source src="/images/Rviz_clip.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+
+  <div class="gallery-item">
+    <h4>Color Vision</h4>
+    <img src="/images/vision.jpeg" alt="Color Vision">
+  </div>
 </div>
 
 ### Enclosure & CAD Designs:
 <p>
 I designed the Bug World in Fusion 360 to plan the sizing and shape before building it in wood, ensuring the environment was centered around the robot. I created an insert for consistent placement of a fixture between the robot base and wooden frame. Additionally, I designed a custom gripper to safely encapsulate round shells without hitting the ground frame, and added rounded corners and mounted AprilTag holders to maintain consistency in testing.
 </p>
-<br>
 <div class="project-gallery">
   <div class="gallery-item">
     <h4>World Model (PreBuild)</h4>

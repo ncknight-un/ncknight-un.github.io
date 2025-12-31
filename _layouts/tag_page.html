@@ -2,13 +2,22 @@
 layout: default
 ---
 
-<div class="arhive-head">
+<div class="archive-head">
   <div class="container">
     <h1 class="archive-title">Tag: <span>{{ page.tag }}</span></h1>
   </div>
 </div>
 
-
-{% for post in page.posts %}
-  {% include article-content.html %}
-{% endfor %}
+<div class="archive-projects container">
+  {% for post in page.posts %}
+    <div class="project-card">
+      {% if post.image %}
+        <img src="{{ post.image }}" alt="{{ post.title }}">
+      {% endif %}
+      <div class="project-info">
+        <h3>{{ post.title }}</h3>
+        <a href="{{ post.url }}">Read more</a>
+      </div>
+    </div>
+  {% endfor %}
+</div>
