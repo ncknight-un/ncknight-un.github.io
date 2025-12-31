@@ -83,7 +83,7 @@ My background spans robotics, automation, and biomedical engineering. I’m pass
   </div>
 
   <div class="gallery-item">
-    <h4>Cycling!</h4>
+    <h4 style="margin-bottom: -2em;">Cycling!</h4>
     <img src="/images/bike.jpg" alt="Bike">
   </div>
 </div>

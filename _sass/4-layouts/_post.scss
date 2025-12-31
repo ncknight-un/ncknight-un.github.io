@@ -290,21 +290,18 @@
     text-align: center;
 
     h4 {
-      margin-top: -20px;
-      margin-bottom: -10px;
-      font-size: 24px;
+      margin-top: 10px;
+      margin-bottom: 0px;
+      font-size: 18px;
       text-transform: uppercase;
       letter-spacing: 1px;
     }
 
     img,
     video {
-      width: 375px;        // fixed rectangle width
+      width: 400px;        // fixed rectangle width
       height: 300px;       // fixed rectangle height
-      transform: scale(0.9);
-      transform-origin: center;
-      object-fit: fill;
-      border-radius: 10px;
+      object-fit: scale-down;
       margin: 0 auto;
       display: block;
     }
