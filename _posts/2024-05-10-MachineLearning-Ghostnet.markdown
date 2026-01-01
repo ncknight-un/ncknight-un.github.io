@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "GhostNet-CBAM: Enhancing Lightweight CNNs with Attention"
+title:  "GhostNet-CBAM: Enhancing Lightweight CNNs"
 date:   2024-05-10 09:00:00 +0300
 image: ghost_stats.jpeg
 tags:   Python Pytorch TensorFlow Machine_Learning Attention_Mechanisms
