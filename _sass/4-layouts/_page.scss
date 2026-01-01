@@ -29,8 +29,7 @@
   display: block;
   position: relative;
   overflow: hidden;
-  background: $light-gray url('Nolan_photo.jpeg') no-repeat center center;
-  background-size: contain;
+  background-size: cover;
   aspect-ratio: 16 / 16;
   max-height: 400px; // increase max-height as well
   border-radius: 8px;

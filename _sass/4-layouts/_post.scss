@@ -62,23 +62,16 @@
    } 
   }
 }
-
 .post-image {
-  width: 60%;              // same width as video
-  max-width: 600px;        // optional max width
-  margin: 0 auto;          // center horizontally
-  background-color: $light-gray;
-
-  // Modern aspect ratio
+  width: 60%;
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: $black;
   aspect-ratio: 16 / 9;
-  
-  // Image as background
-  background-image: url('your-image.jpg');
-  background-size: cover;  // fills the container, cropping if needed
+
+  background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
-
-  display: block;           // ensures block behavior
 }
 
 .post-video {
@@ -188,13 +181,11 @@
       max-width: 100%;
       margin: 0 auto;
       background-repeat: no-repeat;
+      background-color: $black;
       background-size: contain;   // make sure image fills the container
       background-position: center;  // centers the image
       overflow: hidden;
       position: relative;       // needed for absolute children (if any)
-      
-      // Color for the extra space around the image
-      background-color: $light-gray;   // <-- this sets the container color
 
       // Modern aspect ratio (16:9)
       aspect-ratio: 16 / 9;
@@ -205,7 +196,7 @@
       width: 60%;               // full width of its container
       max-width: 100%;
       margin: 0 auto;
-      background-color: $light-gray;
+      background-color: $black;
       overflow: hidden;
 
       // Modern aspect ratio (16:9)
@@ -299,8 +290,8 @@
 
     img,
     video {
-      width: 426x;        // fixed rectangle width
-      height: 240px;       // fixed rectangle height
+      width: 426x;
+      height: 240px;
       object-fit: scale-down;
       margin: 0 auto;
       display: block;

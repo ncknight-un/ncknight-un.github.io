@@ -17,6 +17,8 @@ As an extension, the project explores real-time sorting of moving objects using 
 
 This project demonstrates end-to-end robotic manipulation, combining perception, planning, control, and real-time visualization, and serves as a strong foundation for further research into dynamic motion planning and autonomous sorting systems!
 
+--- 
+
 **School:** Northwestern University  
 **Location:** - Evanston, IL  
 **Duration:** November 2025 - December 2025  
