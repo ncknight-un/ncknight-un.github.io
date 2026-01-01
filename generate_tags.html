@@ -1,0 +1,25 @@
+---
+layout: null
+permalink: /generate-tags.html
+---
+{% assign tags_array = "" | split: "" %}
+
+{% for post in site.posts %}
+  {% assign post_tags = post.tags | split: "," %}
+  {% for t in post_tags %}
+    {% unless tags_array contains t %}
+      {% assign tags_array = tags_array | push: t %}
+    {% endunless %}
+  {% endfor %}
+{% endfor %}
+
+{% for t in tags_array %}
+  {% capture filename %}tag/{{ t | slugify }}/index.html{% endcapture %}
+  {% capture content %}
+    ---
+    layout: tag
+    tag: {{ t | slugify }}
+    ---
+  {% endcapture %}
+  {{ content | strip_newlines | prepend: filename }}
+{% endfor %}

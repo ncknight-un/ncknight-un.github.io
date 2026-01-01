@@ -151,7 +151,7 @@ My background spans robotics, automation, and biomedical engineering. I’m pass
 <br>
 
 
-### Gardening
+### Gardening / Plants
 
 <div class="project-gallery">
 
