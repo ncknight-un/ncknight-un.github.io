@@ -139,12 +139,12 @@ My background spans robotics, automation, and biomedical engineering. I’m pass
   </div>
       
   <div class="gallery-item">
-    <h4>Travel Fishing Rod Model</h4>
+    <h4>Underwater-Travel Fishing Rod Model</h4>
     <img src="/images/fishing.jpg" alt="Fishing Rod">
   </div>
 
   <div class="gallery-item">
-    <h4>Travel Fishing Rod Demo </h4>
+    <h4>Underwater-Travel Fishing Rod Demo </h4>
     <img src="/images/fishing2.jpeg" alt="Rishing Rod 2">
   </div>
 </div>

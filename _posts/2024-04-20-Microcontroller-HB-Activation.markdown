@@ -3,7 +3,7 @@ layout: post
 title:  "MicroController: Bio-Motor Activation"
 date:   2023-05-10 09:00:00 +0300
 video: Fish_Controller.mp4
-tags:   Microcontrollers
+tags:   C Microcontrollers Embedded_Systems Signal_Processing Biofeedback
 ---
 
 This project involves the design and development of a bioinstrument that triggers motor movement in response to a person’s heartbeat. The system uses a microcontroller (MSP430-FR2355) to process ECG data, generating a digital signal that activates a motor to move a series of fish around a fish tank. To verify heartbeats, an LED flashes when a heartbeat is detected by the microcontroller. The device architecture combines hardware components like the MSP430 microprocessor, an ECG module, and a motor driver (TB6612FNG), which work together to control the motor's speed and direction.
@@ -13,6 +13,8 @@ The MSP430 microcontroller serves as the central processing unit, converting ana
 In this demo video, I used an artificial heart signal (Fluke PS410) in order to reduce the amount of setup time when testing the device. As shown, the ECG signal is delivered to the microcontroller in realtime, where it produces an analog signal for the motor driver through a square wave activation at the QRS peak complex.
 
 In summary, the project integrates components to record ECG signals and control motor movement based on heartbeat detection. For a detailed breakdown of the software implementation, the report on GitHub provides an explanation of each line of code.
+
+---
 
 **School:** Purdue University - Indianapolis  
 **Location:** Indianapolis, IN   

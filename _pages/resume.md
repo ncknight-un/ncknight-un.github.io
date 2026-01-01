@@ -10,7 +10,7 @@ permalink: /resume/
 </a>
 
 <iframe 
-    src="../Nolan-Knight-Resume-10-25.pdf" 
+    src="../Nolan-Knight-Resume-01-26.pdf" 
     width="100%" 
     height="1000px">
 </iframe>

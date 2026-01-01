@@ -63,7 +63,7 @@ Many of these projects were done as a series of different assignments as a part 
 
 ## Project Gallery
 
-**Github Link:**  
+<!-- **Github Link:**   -->
 
 <div class="project-gallery">
 

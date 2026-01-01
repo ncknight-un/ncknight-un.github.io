@@ -14,7 +14,7 @@ I'd love to connect! I'm always open to discussing robotics projects, research c
 **GitHub:** [https://github.com/ncknight-un](https://github.com/ncknight-un)
 
 
-Feel free to continue checking out my [Projects](/) or learn more [About Me](/about/).
+Feel free to continue checking out my [Projects](/) or learn more [About](/about/) Me.
 
 <br>
 <br>
