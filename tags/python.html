@@ -5,26 +5,19 @@ permalink: /tag/python/
 ---
 
 <div class="archive-projects container">
-  {% assign tag = page.tag %}
-  {% assign posts_with_tag = site.posts | where_exp:"post","post.tags contains tag" %}
-  
+  {% assign posts_with_tag = "" | split: "" %}
+
+  {% for post in site.posts %}
+    {% assign post_tags = post.tags | split: "," %}
+    {% if post_tags contains page.tag %}
+      {% assign posts_with_tag = posts_with_tag | push: post %}
+    {% endif %}
+  {% endfor %}
+
   {% for post in posts_with_tag %}
     <div class="project-card">
-      {% if post.image %}
-        <img src="{{ post.image }}" alt="{{ post.title }}">
-      {% endif %}
-      
-      {% if post.video %}
-        <video controls>
-          <source src="{{ post.video }}" type="video/mp4">
-          Your browser does not support the video tag.
-        </video>
-      {% endif %}
-      
-      <div class="project-info">
-        <h3>{{ post.title }}</h3>
-        <a href="{{ post.url }}">Read more</a>
-      </div>
+      <h3>{{ post.title }}</h3>
+      <a href="{{ post.url }}">Read more</a>
     </div>
   {% endfor %}
 
