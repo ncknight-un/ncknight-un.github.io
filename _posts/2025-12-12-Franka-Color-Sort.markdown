@@ -27,7 +27,7 @@ This project demonstrates end-to-end robotic manipulation, combining perception,
 
 ## Project Gallery
 
-**Github Link:** [https://github.com/ncknight-un/final-project-MSRFall-2025](https://github.com/ncknight-un/final-project-MSRFall-2025)  
+**Github Link:** [https://github.com/ncknight-un/Franka_Color_Sorting_MSR2025](https://github.com/ncknight-un/Franka_Color_Sorting_MSR2025)  
 **Note: I have shared all CAD files to this public repository! Feel free to build off of them!**
 
 ### Project Demo Vidoes: 

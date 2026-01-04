@@ -2,7 +2,7 @@
 layout: post
 title:  "Interbotix- ROS 2 Wrapper"
 date:   2025-09-10 09:00:00 +0300
-video: orient_grasp.mp4
+video: interbotix_grasp1.mp4
 tags:   Python Vision Path_Planning
 ---
 For this project, I developed a vision-guided robotic arm capable of detecting and retrieving a pen from a human hand. The system uses an Interbotix robotic arm controlled via a ROS2 wrapper with Python, integrating computer vision, kinematics, and motion planning to achieve precise grasping.
@@ -28,25 +28,33 @@ This project was exciting because it was the first time I have been able to inte
 <div class="project-gallery">
 
   <div class="gallery-item">
-    <h4>Camera - Robot Calibration</h4>
+      <h4>Grasp Success Ex#1</h4>
     <video controls autoplay loop muted playsinline>
-      <source src="/images/calibration.mp4" type="video/mp4">
+      <source src="/images/interbotix_grasp1.mp4" type="video/mp4">
       Your browser does not support the video tag.
     </video>
   </div>
   
   <div class="gallery-item">
-    <h4>Orient towards Pen Demo</h4>
+    <h4>Grasp Success Ex#2</h4>
     <video controls autoplay loop muted playsinline>
-      <source src="/images/orient_grasp.mp4" type="video/mp4">
+      <source src="/images/interbotix_grasp2.mp4" type="video/mp4">
       Your browser does not support the video tag.
     </video>
   </div>
 
   <div class="gallery-item">
-    <h4>Grasping Demo - Poor Calibration</h4>
+    <h4>Repeatability</h4>
     <video controls autoplay loop muted playsinline>
-      <source src="/images/poor_cal_attempt.mp4" type="video/mp4">
+      <source src="/images/interbotix_repeat.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+
+  <div class="gallery-item">
+    <h4>Camera - Robot Calibration</h4>
+    <video controls autoplay loop muted playsinline>
+      <source src="/images/calibration.mp4" type="video/mp4">
       Your browser does not support the video tag.
     </video>
   </div>
