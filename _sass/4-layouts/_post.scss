@@ -371,52 +371,59 @@
   // --------------------
   // Navigation
   // --------------------
- .post__navigation {
-    flex-direction: row;           // keep them in a row
-    flex-wrap: wrap;               // allow wrapping if really needed
-    justify-content: space-between; // spread across width
-    gap: 10px;                     // small gap between items
-    margin-bottom: 40px;
-    padding-bottom: 20px;
+  @media only screen and (max-width: $mobile) {
+    .post__navigation {
+      flex-direction: row;          
+      flex-wrap: wrap;              
+      justify-content: space-between;
+      gap: 10px;                    
+      margin-bottom: 60px;          // increased padding below nav
+      padding-bottom: 20px;
 
-    .prev,
-    .next {
-      flex: 1 1 48%;               // two items side by side
-      max-width: 48%;
-      margin: 0;                   // reset margins
-      display: flex;
-      flex-direction: column;      // keep image/video above title
-      align-items: center;         // center content
-    }
+      .prev,
+      .next {
+        flex: 1 1 48%;              
+        max-width: 48%;
+        margin: 0;
+        display: flex;
+        flex-direction: column;     
+        align-items: center;        
+      }
 
-    // Single item still centered
-    .prev.single,
-    .next.single {
-      flex: 1 0 100%;
-      max-width: 100%;
-      margin: 0 auto;
-    }
+      // Single item still centered
+      .prev.single,
+      .next.single {
+        flex: 1 0 100%;
+        max-width: 100%;
+        margin: 0 auto;
+      }
 
-    .post__nav__title {
-      font-size: 14px;             // smaller title
-      line-height: 20px;
-      text-align: center;
-      margin-bottom: 10px;
-
-      a {
-        font-size: 14px;
+      // --------------------
+      // Navigation title
+      // --------------------
+      .post__nav__title {
+        font-size: 12px;             // smaller font
+        line-height: 18px;           // tight but readable
         text-align: center;
+        margin-bottom: 10px;
+
+        a {
+          font-size: 12px;
+          line-height: 18px;
+          text-align: center;
+        }
+      }
+
+      .post__nav__image,
+      .post__nav__video {
+        width: 100%;                 
+        max-width: 100%;
+        aspect-ratio: 16 / 9;
+        margin: 0 auto;
       }
     }
-
-    .post__nav__image,
-    .post__nav__video {
-      width: 100%;                 // fill column width
-      max-width: 100%;
-      aspect-ratio: 16 / 9;
-      margin: 0 auto;
-    }
   }
+
 
   // --------------------
   // Project gallery
