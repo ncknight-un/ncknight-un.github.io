@@ -378,7 +378,7 @@
       justify-content: space-between;
       gap: 10px;                    
       margin-bottom: 60px;          // increased padding below nav
-      padding-bottom: 20px;
+      padding-bottom: 40px;
 
       .prev,
       .next {
@@ -402,7 +402,7 @@
       // Navigation title
       // --------------------
       .post__nav__title {
-        font-size: 12px;             // smaller font
+        font-size: 8px;             // smaller font
         line-height: 18px;           // tight but readable
         text-align: center;
         margin-bottom: 10px;
