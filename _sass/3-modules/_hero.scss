@@ -39,11 +39,18 @@
   }
 
   .hero__image {
-    margin-left: 360px; // move image to the right
+    margin-left: 360px;
+
     img {
-      box-shadow: 0 1px 4px rgba(0,0,0,0.15);
+      width: 220px;   // control size here
+      height: 220px;  // control size here
+      object-fit: cover; // prevents stretching
+      border-radius: 8px;
+      box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15);
+      display: block;
     }
   }
+
 
   @media only screen and (max-width: $desktop) {
     .hero__content {
