@@ -124,7 +124,7 @@ My background spans robotics, automation, and biomedical engineering. I’m pass
 </div>
 <br>
 
-### Fun 3D Prints/Personal CAD Projects
+<!-- ### Fun 3D Prints/Personal CAD Projects
 
 <div class="project-gallery">
 
@@ -148,7 +148,7 @@ My background spans robotics, automation, and biomedical engineering. I’m pass
     <img src="/images/fishing2.jpeg" alt="Rishing Rod 2">
   </div>
 </div>
-<br>
+<br> -->
 
 
 ### Gardening / Plants
@@ -158,10 +158,15 @@ My background spans robotics, automation, and biomedical engineering. I’m pass
   <div class="gallery-item">
     <img src="/images/flower2.jpeg" alt="G2">
   </div>
+  
+  <div class="gallery-item">
+    <img src="/images/flower7.jpeg" alt="G7">
+  </div>
 
+<!-- 
   <div class="gallery-item">
     <img src="/images/flower4.jpeg" alt="G4">
-  </div>
+  </div> -->
 
   <div class="gallery-item">
     <img src="/images/flower5.jpeg" alt="G5">
@@ -170,14 +175,10 @@ My background spans robotics, automation, and biomedical engineering. I’m pass
   <div class="gallery-item">
     <img src="/images/flower6.jpeg" alt="G6">
   </div>
-
+<!-- 
   <div class="gallery-item">
     <img src="/images/flower3.jpeg" alt="G3">
-  </div>
-
-  <div class="gallery-item">
-    <img src="/images/flower7.jpeg" alt="G7">
-  </div>
+  </div> -->
 
   <div class="gallery-item">
     <img src="/images/flower8.jpeg" alt="G8">
