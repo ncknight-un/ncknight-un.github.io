@@ -1,7 +1,9 @@
 .hero {
   padding: 20px 0;
   margin-bottom: 20px;
-  background: #815a5a;
+  background: $brand-color-background;
+
+  border: 2px solid $dark; // or any color you want
 
   .last-item {
     display: flex;
@@ -17,36 +19,45 @@
     .hero__title {
       font-size: 48px;
       font-weight: normal;
-      color: #ffffff;
+      color: $dark;
     }
 
     .hero__subtitle {
       font-size: 18px;
       line-height: 32px;
       letter-spacing: 0.5px;
-      color: #ffffff;
+      color: $dark;
     }
 
     .hero__social {
       display: flex;
+      // font-size: 18px;
+      color: $dark;
+        a,
+        svg,
+        i {
+          color: $dark;
+          fill: $dark;
+        }
     }
 
     .hero__social-title {
       font-weight: 700;
-      color: #ffffff;
+      color: $dark;
     }
 
   }
 
   .hero__image {
     margin-left: 360px;
+=
 
     img {
       width: 220px;   // control size here
       height: 220px;  // control size here
       object-fit: cover; // prevents stretching
       border-radius: 8px;
-      box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15);
+      box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.15);
       display: block;
     }
   }

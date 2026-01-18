@@ -21,7 +21,9 @@ This project was exciting because it was the first time I have been able to inte
 
 ## Project Gallery
 
-**Github Link:**  [https://github.com/ncknight-un/Interbotix_Pen_Grasping](https://github.com/ncknight-un/Interbotix_Pen_Grasping)
+**Github Link:** <a href="https://github.com/ncknight-un/Interbotix_Pen_Grasping" target="_blank" rel="noopener noreferrer">
+https://github.com/ncknight-un/Interbotix_Pen_Grasping
+</a>
 
 ### Enclosure & CAD Designs:
 

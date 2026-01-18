@@ -24,7 +24,9 @@ In summary, the project integrates components to record ECG signals and control 
 
 ## Project Gallery
 
-**Github Link:** [https://github.com/ncknight-un/BioSense-Motor-Activation](https://github.com/ncknight-un/BioSense-Motor-Activation)
+**Github Link:** <a href="https://github.com/ncknight-un/BioSense-Motor-Activation" target="_blank" rel="noopener noreferrer">
+https://github.com/ncknight-un/BioSense-Motor-Activation
+</a>
 
 ### Biosense Fishtank:
 <div class="project-gallery">

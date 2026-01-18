@@ -1,6 +1,6 @@
 #-------------------------------
 # General Site Settings
-title: Nolan Knight
+title: Portfolio
 logo: NCK_Logo5.png
 description: Nolan Knight's Portfolio
 
@@ -11,7 +11,7 @@ author:
   name: Nolan Christopher Knight
   image: Nolan_photo.jpeg
   say-hello: <strong>Nolan Knight</strong>
-  bio: Current MSR Student at Northwestern Univeristy in Evanston, IL
+  bio: Current MSR Student at Northwestern University in Evanston, IL
 
 
 #-------------------------------

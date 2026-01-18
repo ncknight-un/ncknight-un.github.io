@@ -2,7 +2,7 @@
 layout: post
 title:  "Vision-Based Sorting with the FER Panda Robot"
 date:   2025-12-12 09:00:00 +0300
-video: one_still.mp4
+video: Final_Video_Robot.mp4
 tags:   Ros_2 Git Python Franka 3D_Printing Path_Planning Rviz MoveIt Vision
 ---
 
@@ -27,7 +27,10 @@ This project demonstrates end-to-end robotic manipulation, combining perception,
 
 ## Project Gallery
 
-**Github Link:** [https://github.com/ncknight-un/Franka_Color_Sorting_MSR2025](https://github.com/ncknight-un/Franka_Color_Sorting_MSR2025)  
+**Github Link:** <a href="https://github.com/ncknight-un/Franka_Color_Sorting_MSR2025" target="_blank" rel="noopener noreferrer">
+https://github.com/ncknight-un/Franka_Color_Sorting_MSR2025
+</a>
+
 **Note: I have shared all CAD files to this public repository! Feel free to build off of them!**
 
 ### Project Demo Vidoes: 
