@@ -146,9 +146,11 @@ Key components include:
 - CAD modeling with an emphasis on joint kinematics and range-of-motion analysis  
 - Electronics integration, power distribution planning, and wiring practices
 - Actuator bring-up, motor ID management, and torque-aware system design  
+- Engineering documentation and project planning for multi-disciplinary systems  
+
 <!-- - Embedded systems planning using Raspberry Pi and Dynamixel motors  
 - ROS ecosystem familiarity, including URDF modeling and RViz visualization   -->
-- Engineering documentation and project planning for multi-disciplinary systems  
+
 
 ---
 
@@ -156,4 +158,4 @@ Key components include:
 
 This project has quickly deepened my understanding of how mechanical design, electronics, and software must be developed together when building a robotic system from scratch. Bringing up the electronics and validating motor operation reinforced the value of careful system architecture and documentation, particularly when planning for future ROS integration. Designing the robot with simulation and software control in mind from the beginning has helped shape a more scalable and extensible platform for gait development.
 
-Overall, this project has strengthened my confidence in tackling open-ended robotics problems that span CAD, hardware integration, and software planning. It has also clarified my interest in legged locomotion, robot simulation, and developing robust robotic platforms that can transition cleanly from prototype to software-driven experimentation.
+Overall, this project has strengthened my confidence in tackling open-ended robotics problems that span CAD, hardware integration, and software planning. It has also sparked my interest in legged locomotion, robotic simulation, and building platforms that transition seamlessly from hardware prototypes to software-driven experimentation.
