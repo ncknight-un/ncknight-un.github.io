@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "RUDY: Quadruped From Scratch"
+title:  "Rudy: Quadruped From Scratch"
 date:   2026-01-12 09:00:00 +0300
 video: Rudy_Motor_Test.mp4
 tags:  CAD Dynamixel Embedded_Systems Microcontrollers ROS_2 Quadrupeds 3D_Printing
