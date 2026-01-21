@@ -111,10 +111,10 @@ a {
     color: $link-color;
     transition: $global-transition;
     &:hover {
-      color: color.adjust($link-color, $lightness: -10%);
+      color: darken($link-color, 10%);  // color.adjust FAILS HERE
     }
     &:active {
-      color: color.adjust($link-color, $lightness: -20%);
+      color: darken($link-color, 20%);
     }
 }
 
