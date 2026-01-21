@@ -1,12 +1,12 @@
 ---
 layout: post
-title:  "Rudy: Quadruped From Scratch"
+title:  "Rudy: Quadruped From Scratch (In-Progress)"
 date:   2026-01-12 09:00:00 +0300
 video: Rudy_Motor_Test.mp4
 tags:  CAD Dynamixel Embedded_Systems Microcontrollers ROS_2 Quadrupeds 3D_Printing
 ---
 
-Meet Rudy! An in-progress quadruped which I have designed and have begun building from scatch! 
+Meet Rudy! An **in-progress** quadruped which I have designed and have begun building from scatch! 
 
 Over the last few weeks I have designed, fabricated, and wired a prototype for a small quadruped controlled using Dynamixel actuators, a Robotis U2D2 paired with a Power Hub Controller, and a Raspberry Pi. My future goals for this project are to implement ROS for future gait planning and simulation on the Raspberry Pi.
 
