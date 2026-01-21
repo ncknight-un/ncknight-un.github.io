@@ -3,7 +3,7 @@ layout: post
 title:  "Vision-Based Sorting with the FER Panda Robot"
 date:   2025-12-12 09:00:00 +0300
 video: Final_Video_Robot.mp4
-tags:   Ros_2 Git Python Franka 3D_Printing Path_Planning Rviz MoveIt Vision
+tags:  CAD Franka Git Path_Planning Python Ros_2 Rviz Vision Simulation 3D_Printing
 ---
 
 

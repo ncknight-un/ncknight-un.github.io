@@ -3,7 +3,7 @@ layout: post
 title:  "Physics Simulations: Dynamics"
 date:   2025-12-01 09:00:00 +0300
 video: leg_sim.mp4
-tags:   Physics Impacts Python Lagrangian_Dynamics
+tags:  Lagrangian_Dynamics Physics Python Simulation
 ---
 
 During my Master’s in Robotics at Northwestern University, I took a Machine Dynamics course focused on Lagrangian dynamics and physics-based simulation. This page presents a series of small projects and simulation examples developed throughout the quarter. It was one of the most engaging and conceptually important courses I have taken in my academic career, and I felt it was important to showcase representative work from the class.

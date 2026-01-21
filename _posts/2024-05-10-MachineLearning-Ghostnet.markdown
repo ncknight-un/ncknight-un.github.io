@@ -3,7 +3,7 @@ layout: post
 title:  "GhostNet-CBAM: Enhancing Lightweight CNNs"
 date:   2024-05-10 09:00:00 +0300
 image: ghost_stats.jpeg
-tags:   Python Pytorch TensorFlow Machine_Learning Attention_Mechanisms
+tags:   Attention_Mechanisms Machine_Learning Python Pytorch TensorFlow
 ---
 
 This project explores the integration of the **Convolutional Block Attention Module (CBAM)** into the **GhostNet** architecture to enhance feature representation while preserving computational efficiency.

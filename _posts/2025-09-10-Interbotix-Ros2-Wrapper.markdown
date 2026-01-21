@@ -3,7 +3,7 @@ layout: post
 title:  "Interbotix- ROS 2 Wrapper"
 date:   2025-09-10 09:00:00 +0300
 video: interbotix_grasp1.mp4
-tags:   Python Vision Path_Planning
+tags:   Path_Planning Python  ROS_2 Vision
 ---
 For this project, I developed a vision-guided robotic arm capable of detecting and retrieving a pen from a human hand. The system uses an Interbotix robotic arm controlled via a ROS2 wrapper with Python, integrating computer vision, kinematics, and motion planning to achieve precise grasping.
 

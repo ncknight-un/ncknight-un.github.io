@@ -3,7 +3,7 @@ layout: post
 title:  "CAD: Automated Manufacturing"
 date:   2025-08-10 09:00:00 +0300
 video: Layout1.mp4
-tags:   Automation Manufacturing Cobots CAD Milling Lathe
+tags:   Automation CAD Cobots Lathe Manufacturing Milling 
 ---
 
 During my contract work for GM Diecron, I gained practical experience in automation-focused manufacturing projects within the aerospace industry. I assisted in designing floor plans and machine hardware that enabled the integration of collaborative robots to improve efficiency and reduce manual labor.

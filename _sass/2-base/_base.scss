@@ -111,10 +111,10 @@ a {
     color: $link-color;
     transition: $global-transition;
     &:hover {
-      color: darken($link-color, 10%);
+      color: color.adjust($link-color, $lightness: -10%);
     }
     &:active {
-      color: darken($link-color, 20%);
+      color: color.adjust($link-color, $lightness: -20%);
     }
 }
 
