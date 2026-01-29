@@ -1,14 +1,14 @@
 ---
 layout: post
 title:  "Rudy: Quadruped From Scratch (In-Progress)"
-date:   2026-01-12 09:00:00 +0300
+date:   2026-01-28 09:00:00 +0300
 video: Rudy_Motor_Test.mp4
 tags:  CAD Dynamixel Embedded_Systems Microcontrollers ROS_2 Quadrupeds 3D_Printing
 ---
 
 Meet Rudy! An **in-progress** quadruped which I have designed and have begun building from scatch! 
 
-Over the last few weeks I have designed, fabricated, and wired a prototype for a small quadruped controlled using Dynamixel actuators, a Robotis U2D2 paired with a Power Hub Controller, and a Raspberry Pi. My future goals for this project are to implement ROS for future gait planning and simulation on the Raspberry Pi.
+Over the last few weeks I have designed, fabricated, and wired a prototype for a small quadruped controlled using Dynamixel actuators, a Robotis U2D2 paired with a Power Hub Controller, and a Raspberry Pi. My future goals for this project are to implement ROS for future gait planning and simulation on the Raspberry Pi!
 
 ---
 ## Current Progress: 
@@ -57,10 +57,28 @@ The added weight is primarily due to:
   - Documented motor IDs for future ROS integration
 - Currently waiting on bearings to assemble the final two legs.
 
+--- 
+
+### Software Design
+
+- Current set-up consists of Ubuntu 24.04 LTS Desktop, ROS 2 Kilted, and Dynamixel SDK Package. 
+- Initial tests have taken place to move all motors on the Quadruped using ROS 2 position publications in terminal. 
+- Next Task: Design an IK package for gait approximation and control.
+
+---
 
 ## Project Gallery
 
 <div class="project-gallery">
+
+  <div class="gallery-item">
+    <h4>Initial ROS 2 Testing</h4>
+    <video autoplay loop muted playsinline controls>
+      <source src="/images/Rudy_Test4.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+
   <div class="gallery-item">
     <h4>Initial Motor Testing</h4>
     <video autoplay loop muted playsinline controls>
@@ -70,30 +88,29 @@ The added weight is primarily due to:
   </div>
 
   <div class="gallery-item">
-    <h4>Current Iteration Model</h4>
-    <img src="/images/Rudy_Iteration_Current.JPG" alt="Modeling Current">
+    <h4>Static Weight Bearing Test</h4>
+    <img src="/images/Rudy_Standing_Test.jpg" alt="Rudy Stands">
   </div>
-
-  <!-- <div class="gallery-item">
-    <h4>Rudy - Printed Model</h4>
-    <img src="/images/Rudy_Cute.png" alt="Rudy!">
-  </div>
-
-  <div class="gallery-item">
-    <h4>Electronics Layout - CAD</h4>
-    <img src="/images/Rudy_CAD_Wiring.png" alt="Wiring CAD">
-  </div> -->
-
-  <div class="gallery-item">
-    <h4>Electronics - Implemented</h4>
-    <img src="/images/Rudy_Wiring.png" alt="Wiring">
-  </div>
-
 
   <div class="gallery-item">
     <h4>Testing Stand</h4>
     <img src="/images/Rudy_Stand.png" alt="Stand">
   </div>
+
+  <div class="gallery-item">
+    <h4>Circuit Diagram</h4>
+    <img src="/images/Rudy_Circuit.png" alt="Circuit Diagram">
+  </div>
+
+  <div class="gallery-item">
+    <h4>Current Iteration Model</h4>
+    <img src="/images/Rudy_Iteration_Current.JPG" alt="Modeling Current">
+  </div>
+<!-- 
+  <div class="gallery-item">
+    <h4>Electronics - Implemented</h4>
+    <img src="/images/Rudy_Wiring.png" alt="Wiring">
+  </div> -->
 
   <div class="gallery-item">
     <h4>Original Ideation Model</h4>
