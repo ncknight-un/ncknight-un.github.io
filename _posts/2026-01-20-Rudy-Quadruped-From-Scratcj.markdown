@@ -1,14 +1,14 @@
 ---
 layout: post
 title:  "Rudy: Quadruped From Scratch (In-Progress)"
-date:   2026-01-28 09:00:00 +0300
-video: Rudy_Motor_Test.mp4
+date:   2026-02-16 09:00:00 +0300
+video: Rudy_Rviz_URDF.mp4
 tags:  CAD Dynamixel Embedded_Systems Microcontrollers ROS_2 Quadrupeds 3D_Printing
 ---
 
 Meet Rudy! An **in-progress** quadruped which I have designed and have begun building from scatch! 
 
-Over the last few weeks I have designed, fabricated, and wired a prototype for a small quadruped controlled using Dynamixel actuators, a Robotis U2D2 paired with a Power Hub Controller, and a Raspberry Pi. My future goals for this project are to implement ROS for future gait planning and simulation on the Raspberry Pi!
+Over the last few weeks I have designed, fabricated, and wired a prototype for a small quadruped controlled using Dynamixel actuators, a Robotis U2D2 paired with a Power Hub Controller, and a Raspberry Pi. My future goals for this project are to implement ROS for future gait planning and simulation on the Raspberry Pi. You can check out my progress below and on my github!
 
 ---
 ## Current Progress: 
@@ -36,7 +36,7 @@ Over the last few weeks I have designed, fabricated, and wired a prototype for a
 - Iterated on leg and joint geometry to achieve the intended **degrees of freedom**:
 - Identified and removed all hip impingement points in ROM Testing.
 - Achieved full intended range of motion across all joints as of January 18th, 2026.
-- **Estimated Weight:** ~5 lb once bearings are installed  
+- **Estimated Weight:** ~5 lb (Final Model is being assembled now)
 
 <!-- This is approximately 0.5-1 lb over initial estimates, so joint force limits will be re-evaluated to ensure safe operation.
 I will also work on reducing mass through various weight reduction means over the coming weeks. New model iterations have begun 
@@ -55,7 +55,6 @@ The added weight is primarily due to:
 - Verified motor actuation using the Dynamixel computer GUI:
   - Confirmed correct joint response for every motor
   - Documented motor IDs for future ROS integration
-- Currently waiting on bearings to assemble the final two legs.
 
 --- 
 
@@ -63,11 +62,16 @@ The added weight is primarily due to:
 
 - Current set-up consists of Ubuntu 24.04 LTS Desktop, ROS 2 Kilted, and Dynamixel SDK Package. 
 - Initial tests have taken place to move all motors on the Quadruped using ROS 2 position publications in terminal. 
-- Next Task: Design an IK package for gait approximation and control.
+- Current Task: Design an IK package for gait approximation and control using ROS 2 written in C++ for embedded control.
 
 ---
 
 ## Project Gallery
+
+**Github Link:** <a href="https://github.com/ncknight-un/Quadruped_Rudy" target="_blank" rel="noopener noreferrer">
+https://github.com/ncknight-un/Quadruped_Rudy
+</a>
+
 
 <div class="project-gallery">
 
@@ -75,6 +79,14 @@ The added weight is primarily due to:
     <h4>Initial ROS 2 Testing</h4>
     <video autoplay loop muted playsinline controls>
       <source src="/images/Rudy_Test4.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+
+  <div class="gallery-item">
+    <h4>Initial RViz Modeling</h4>
+    <video autoplay loop muted playsinline controls>
+      <source src="/images/Rudy_Rviz_URDF.mp4" type="video/mp4">
       Your browser does not support the video tag.
     </video>
   </div>
@@ -103,23 +115,23 @@ The added weight is primarily due to:
   </div>
 
   <div class="gallery-item">
-    <h4>Current Iteration Model</h4>
-    <img src="/images/Rudy_Iteration_Current.JPG" alt="Modeling Current">
+    <h4>Final Iteration Model - Used in Sim</h4>
+    <img src="/images/Rudy_FinalModel.jpeg" alt="Modeling Current">
   </div>
-<!-- 
-  <div class="gallery-item">
-    <h4>Electronics - Implemented</h4>
-    <img src="/images/Rudy_Wiring.png" alt="Wiring">
-  </div> -->
 
   <div class="gallery-item">
-    <h4>Original Ideation Model</h4>
-    <img src="/images/Rudy_It1.JPG" alt="Iteration 1">
+    <h4>Primary Iteration Model</h4>
+    <img src="/images/Rudy_Iteration_Current.JPG" alt="Modeling Current">
   </div>
 
   <div class="gallery-item">
     <h4>Secondary Ideation Model</h4>
     <img src="/images/Rudy_It2.JPG" alt="Iteration 2">
+  </div>
+
+  <div class="gallery-item">
+    <h4>Original Ideation Model</h4>
+    <img src="/images/Rudy_It1.JPG" alt="Iteration 1">
   </div>
 
 </div>
@@ -130,17 +142,11 @@ The added weight is primarily due to:
 
 **Next steps shift toward building the software stack**
 
-- Install Ubuntu and ROS on the Raspberry Pi controller
-- Research quadruped-focused ROS packages
-- Develop a URDF model for visualization and simulation
-- Use RViz to validate kinematics and begin gait prototyping
-- Integrate motor control commands via ROS
-- Finalize electronics layout to match the ROS architecture
+- Use RViz to assist in validation of kinematics and begin gait prototyping
+- Implement Open Loop Control Gait using RosJoy.
 
 **Next motor-related steps**
-- Determine safe torque limits  
-- Confirm joint orientation conventions for software integration  
-- Finalize a detailed digital electronics layout  
+- Confirm joint orientation conventions for software integration that aligns with kinematics.
 
 ---
 
@@ -164,9 +170,8 @@ Key components include:
 - Electronics integration, power distribution planning, and wiring practices
 - Actuator bring-up, motor ID management, and torque-aware system design  
 - Engineering documentation and project planning for multi-disciplinary systems  
-
-<!-- - Embedded systems planning using Raspberry Pi and Dynamixel motors  
-- ROS ecosystem familiarity, including URDF modeling and RViz visualization   -->
+- Embedded systems planning using Raspberry Pi and Dynamixel motors  
+- ROS ecosystem familiarity, including URDF modeling and RViz visualization
 
 
 ---
