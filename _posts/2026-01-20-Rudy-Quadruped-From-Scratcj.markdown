@@ -1,14 +1,14 @@
 ---
 layout: post
 title:  "Rudy: Quadruped From Scratch (In-Progress)"
-date:   2026-02-16 09:00:00 +0300
+date:   2026-03-03 09:00:00 +0300
 video: Rudy_Rviz_URDF.mp4
 tags:  CAD Dynamixel Embedded_Systems Microcontrollers ROS_2 Quadrupeds 3D_Printing
 ---
 
 Meet Rudy! An **in-progress** quadruped which I have designed and have begun building from scatch! 
 
-Over the last few weeks I have designed, fabricated, and wired a prototype for a small quadruped controlled using Dynamixel actuators, a Robotis U2D2 paired with a Power Hub Controller, and a Raspberry Pi. My future goals for this project are to implement ROS for future gait planning and simulation on the Raspberry Pi. You can check out my progress below and on my github!
+Over the last few weeks I have designed, fabricated, and wired a prototype for a small quadruped controlled using Dynamixel actuators, a Robotis U2D2 paired with a Power Hub Controller, and an Ubuntu OS Raspberry Pi operating with ROS. My future goals for this project are to implement an existing bezier curve model on my kinematic model to get advanced gait control and body orientation. Currently, Rudy is getting close to walking with a Quasi-static gait using joint waypoints for each foot. You can check out my progress below and on my github!
 
 ---
 ## Current Progress: 
@@ -36,15 +36,7 @@ Over the last few weeks I have designed, fabricated, and wired a prototype for a
 - Iterated on leg and joint geometry to achieve the intended **degrees of freedom**:
 - Identified and removed all hip impingement points in ROM Testing.
 - Achieved full intended range of motion across all joints as of January 18th, 2026.
-- **Estimated Weight:** ~5 lb (Final Model is being assembled now)
-
-<!-- This is approximately 0.5-1 lb over initial estimates, so joint force limits will be re-evaluated to ensure safe operation.
-I will also work on reducing mass through various weight reduction means over the coming weeks. New model iterations have begun 
-compacting the structure more.
-
-The added weight is primarily due to:
-- Electrical components not included in early estimates
-- Reinforced leg geometry and housing revisions -->
+- **Estimated Weight:** ~5 lb (Final Model now assembled!)
 
 ---
 
@@ -72,8 +64,25 @@ The added weight is primarily due to:
 https://github.com/ncknight-un/Quadruped_Rudy
 </a>
 
+**Throughout this project, I’ve documented my progress step by step — explore how Rudy has evolved over the past 10 weeks!**
 
 <div class="project-gallery">
+
+  <div class="gallery-item">
+    <h4>Initial Qausti-Static Gait Testing</h4>
+    <video autoplay loop muted playsinline controls>
+      <source src="/images/Rudy_QSgait1.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+
+  <div class="gallery-item">
+    <h4>ROS Service Static Poses</h4>
+    <video autoplay loop muted playsinline controls>
+      <source src="/images/Rudy_StaticPoses.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
 
   <div class="gallery-item">
     <h4>Initial ROS 2 Testing</h4>
@@ -140,13 +149,11 @@ https://github.com/ncknight-un/Quadruped_Rudy
 ---
 ## Next Steps
 
-**Next steps shift toward building the software stack**
+**Continue Developing Gait Generation and Validating Kinematics**
 
-- Use RViz to assist in validation of kinematics and begin gait prototyping
+- Use RViz to assist in validation of kinematics and continue gait prototyping
 - Implement Open Loop Control Gait using RosJoy.
 
-**Next motor-related steps**
-- Confirm joint orientation conventions for software integration that aligns with kinematics.
 
 ---
 

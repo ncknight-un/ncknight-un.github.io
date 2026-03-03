@@ -2,7 +2,7 @@
 layout: post
 title:  "Physics Simulations: Dynamics"
 date:   2025-12-01 09:00:00 +0300
-video: leg_sim.mp4
+video: trip_pend.mp4
 tags:  Lagrangian_Dynamics Physics Python Simulation
 ---
 
