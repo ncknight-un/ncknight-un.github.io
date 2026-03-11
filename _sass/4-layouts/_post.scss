@@ -66,21 +66,19 @@
 
 .post-video {
   position: relative;
-  width: 60%;          // smaller width
-  max-width: 600px;    // optional max
-  margin: 0 auto;      // center horizontally
+  width: 60%;
+  max-width: 800px;
+  margin: 0 auto;
   background: $light-gray;
   overflow: hidden;
-  // Modern aspect ratio (16:9)
   aspect-ratio: 16 / 9;
 
-
   video {
-    width: 100%;        // fills container width
-    height: auto;       // keeps aspect ratio
-    display: block;     // avoids inline spacing
-    margin: 0 auto;     // center video inside container
-    object-fit: contain; // ensures full video visible without cropping
+    width: 100%;
+    height: 100%;
+    object-fit: cover;      // fills container
+    object-position: center; // keeps crop centered
+    display: block;
   }
 }
 

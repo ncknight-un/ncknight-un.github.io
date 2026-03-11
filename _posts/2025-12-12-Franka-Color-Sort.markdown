@@ -25,6 +25,18 @@ This project demonstrates end-to-end robotic manipulation, combining perception,
  
 ---
 
+### Team Members:
+**Miguel Pigues**: 
+
+
+**Halley Zhong**:  <a href="https://halleyscomet-99.github.io/" target="_blank" rel="noopener noreferrer">
+https://halleyscomet-99.github.io
+
+**Rishika Bera**:  <a href="https://rishika2024.github.io/" target="_blank" rel="noopener noreferrer">
+https://rishika2024.github.io
+
+---
+
 ## Project Gallery
 
 **Github Link:** <a href="https://github.com/ncknight-un/Franka_Color_Sorting_MSR2025" target="_blank" rel="noopener noreferrer">

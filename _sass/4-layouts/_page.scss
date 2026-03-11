@@ -89,6 +89,17 @@
   }
 }
 
+.gallery-item h4 {
+  text-align: center;
+  margin-bottom: -10px;
+}
+
+.gallery-item img,
+.gallery-item video {
+  display: block;
+  margin-bottom: 0px;   /* removes space under media */
+}
+
 .project-gallery {
   display: flex;
   flex-wrap: wrap;
