@@ -2,7 +2,7 @@
 layout: post
 title:  "Rudy: Quadruped From Scratch"
 date:   2026-03-10 09:00:00 +0300
-video: Rudy_FinalVid_Speed.mp4
+video: Rudy_FinalVid6.mp4
 tags:  CAD Dynamixel Embedded_Systems Microcontrollers ROS_2 Quadrupeds 3D_Printing
 ---
 
@@ -119,7 +119,7 @@ https://github.com/ncknight-un/Quadruped_Rudy
     <h4>Original Ideation Model</h4>
     <img src="/images/Rudy_It1.JPG" alt="Iteration 1">
   </div>
-</div>
+  </div>
 
 ---
 
@@ -132,39 +132,13 @@ https://github.com/ncknight-un/Quadruped_Rudy
 - One degree of freedom at each knee:
   - Flexion/extension **(112-deg Flex/Ext)**
 
-<div class="project-gallery">
   <div class="gallery-item">
-    <h4>Hip Abad Motion Study</h4>
+    <h4>Range of Motion Studies</h4>
     <video autoplay loop muted playsinline controls>
-      <source src="/images/Rudy_Abad.mp4" type="video/mp4">
+      <source src="/images/Rudy_MotionStudy2.mp4" type="video/mp4">
       Your browser does not support the video tag.
     </video>
   </div>
-
-  <div class="gallery-item">
-    <h4>Hip Flex/Ext Motion Study</h4>
-    <video autoplay loop muted playsinline controls>
-      <source src="/images/Rudy_Hip_Flex.mp4" type="video/mp4">
-      Your browser does not support the video tag.
-    </video>
-  </div>
-
-  <div class="gallery-item">
-    <h4>Knee Flex/Ext Motion Study</h4>
-    <video autoplay loop muted playsinline controls>
-      <source src="/images/Rudy_Knee_Flex.mp4" type="video/mp4">
-      Your browser does not support the video tag.
-    </video>
-  </div>
-
-  <div class="gallery-item">
-    <h4>Head Motion Study</h4>
-    <video autoplay loop muted playsinline controls>
-      <source src="/images/Rudy_Head_Flex.mp4" type="video/mp4">
-      Your browser does not support the video tag.
-    </video>
-  </div>
-</div>
 
 ---
 

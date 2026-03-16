@@ -274,6 +274,28 @@
   }
 }
 
+.gallery-item {
+  flex: 1 1 calc(50% - 20px);
+  text-align: center;
+
+  h4 {
+    margin-top: 5px;
+    margin-bottom: 10px;
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+
+  img,
+  video {
+    width: 100%;
+    height: auto;
+    max-height: 525px; /* optional limit */
+    object-fit: contain;
+    margin: 0 auto;
+    display: block;
+  }
+}
 
 // Optional: make it responsive for smaller screens
 @media (max-width: 600px) {
