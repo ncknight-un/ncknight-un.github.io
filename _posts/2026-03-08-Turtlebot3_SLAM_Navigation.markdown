@@ -13,21 +13,6 @@ https://github.com/ncknight-un/Quadruped_Rudy
 </a> -->
 
 ---
-## Systems and Packages:
-
-#### ROS 2 Package Structure
-
-- **quadruped_behavior**
-  - Implements the **trot gait controller**
-  - Generates waypoint trajectories and handles ROS communication
-
-- **rudy_description**
-  - Contains the **URDF model** for the robot
-  - Provides tools for **URDF loading and RViz visualization**
-
-- **rudy_lib**
-  - Defines **leg and body kinematics**
-  - Utilities for **kinematics calculations**
 
   <!-- <div class="gallery-item">
     <h4>Software Architecture</h4>

@@ -155,7 +155,7 @@ https://github.com/ncknight-un/Quadruped_Rudy
 
 --- 
 
-### Software Design
+### Software/Embedded Design
 
 - The robot runs **Ubuntu 24.04 LTS** with **ROS 2 Kilted** on a **Raspberry Pi 4-B+**.
 - Control logic is implemented using a **ROS 2 node** that generates joint trajectories and gait timing.
