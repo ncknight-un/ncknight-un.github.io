@@ -27,7 +27,7 @@
 .logo {
   position: absolute;
   top: 50%;
-  left: 0;
+  left: 50px;
   transform: translateY(-50%) translateX(-40px);
   
   .logo__link {
@@ -129,7 +129,7 @@
 .nav-buttons {
   position: absolute;
   top: 50%;
-  right: 0;
+  right: 50px;
   transform: translateY(-50%);
   font-size: 21px;
   
