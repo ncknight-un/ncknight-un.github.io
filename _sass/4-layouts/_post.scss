@@ -263,15 +263,15 @@
       letter-spacing: 1px;
     }
     img {
-      width: 480px;
-      height: 270px;
+      width: 432px; /* 480 * 0.9 */
+      height: 243px; /* 270 * 0.9 */
       object-fit: scale-down;
       margin: 0 auto;
       display: block;
     }
     video {
-      width: 480px;
-      height: 270px;
+      width: 432px; /* 480 * 0.9 */
+      height: 243px; /* 270 * 0.9 */  
       object-fit: fill;
       margin: 0 auto;
       display: block;
