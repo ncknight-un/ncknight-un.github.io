@@ -5,7 +5,7 @@ order: 3
 permalink: /contact/
 ---
 
-I'd love to connect! I'm always open to discussing robotics projects, research collaborations, internships, and ideas at the intersection of robotics, AI, and human-centered design.
+I'd love to connect! I'm always open to discussing robotics projects, research collaborations, internships, and ideas at the intersection of robotics, machine learning, and human-centered design.
 
 
 **Email:** [nolanknight133@icloud.com](mailto:nolanknight133@icloud.com)  

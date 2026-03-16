@@ -6,23 +6,97 @@ video: Rudy_FinalVid_Comp.mp4
 tags:  CAD Dynamixel Embedded_Systems Microcontrollers ROS_2 Quadrupeds 3D_Printing
 ---
 
-Meet Rudy! An **in-progress** quadruped which I have designed and built from scatch.
+Meet Rudy! A quadruped which I have designed and built from scatch!
 
-Over the last few weeks I have designed, fabricated, and wired a prototype for a small quadruped controlled using Dynamixel actuators, a Robotis U2D2 paired with a Power Hub Controller, and an Ubuntu OS Raspberry Pi operating with ROS for gait and pose control. My future goals for this project are to implement an existing bezier curve model on my robot's body kinematics to get advanced gait control and body orientation. Currently, Rudy is walking using a trot gait using a series of waypoints for each diagonal set of feet with a phase offset from one another. You can check out my progress below and on my github.
+Rudy was designed to operate using **ROS 2**, running on an **Ubuntu Raspberry Pi** and powered by **Dynamixel XC430 motors**.
+
+Currently, Rudy walks using a **phased trot gait**. The next phase will focus on implementing **kinematics** using a custom kinematics package I developed, along with integrating **more advanced gait algorithms** to improve locomotion and control.
 
 **Github Link:** <a href="https://github.com/ncknight-un/Quadruped_Rudy" target="_blank" rel="noopener noreferrer">
 https://github.com/ncknight-un/Quadruped_Rudy
 </a>
 
 ---
-## Systems and Design:
+### Gait Generation
+
+- Implemented a **trot gait** using a single **ROS 2 node** that controls **Dynamixel motors** via the **Dynamixel SDK**, with a timer callback handling **joint state publication** and **waypoint actuation**.
+- **Future Work:** Implement the **body kinematics package** for gait generation using **Bezier curve trajectories**.
+
+<div class="project-gallery">
+
+  <div class="gallery-item">
+    <h4>Final Walking Demo - Joint Waypoints</h4>
+    <video autoplay loop muted playsinline controls>
+      <source src="/images/Rudy_BestWalk.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+
+  <div class="gallery-item">
+    <h4>Walking Demo - Outdoors</h4>
+    <video autoplay loop muted playsinline controls>
+      <source src="/images/Rudy_Outside.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+
+  <div class="gallery-item">
+    <h4>Initial Trot Testing - Joint Waypoints</h4>
+    <video autoplay loop muted playsinline controls>
+      <source src="/images/Rudy_Trot1.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+
+  <div class="gallery-item">
+    <h4>Initial Qausti-Static Gait Testing</h4>
+    <video autoplay loop muted playsinline controls>
+      <source src="/images/Rudy_QSgait1.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+
+</div>
+<br>
+
+--- 
+
+### Static Poses - ROS 2 Service Calls
+
+- I thought it would be fun to give Rudy more life by adding in static whole-body joint poses via ROS 2 service calls. 
+  - Below you can find his implementation of the following poses:
+    - Lie Down
+    - Sit Down
+    - Stand Up 
+    - Kneel 
+    - Shake Paw
+
+<div class="project-gallery">
+  <div class="gallery-item">
+    <h4>Complete ROS Service Static Poses</h4>
+    <video autoplay loop muted playsinline controls>
+      <source src="/images/Rudy_Poses2.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+
+  <div class="gallery-item">
+    <h4>ROS Service Static Poses Test</h4>
+    <video autoplay loop muted playsinline controls>
+      <source src="/images/Rudy_StaticPoses.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+</div>
+<br>
+
+---
 
 ### CAD Design & Modeling
 
 - Iteratively designed the robot using Fusion 360 to achieve the intended **degrees of freedom**:
 - Identified and removed all joint impingement points in Range-of-Motion Testing as of January 18th, 2026.
 - **Total Robot Weight:** 4.8 lb (2.18kg) - excludes battery
-<!-- (0.7lb / 0.32 kg)  -->
   - **(Final Model assembled using PLA-CF for the body and TPU for the Feet)**
 
 <div class="project-gallery">
@@ -52,17 +126,17 @@ https://github.com/ncknight-un/Quadruped_Rudy
 ### Range of Motion Design
 
 - Two degrees of freedom at each hip:
-  - Abduction/adduction (15-deg Abd / 65-deg add)
+  - Abduction/adduction **(15-deg Abd / 65-deg add)**
     - Hip Abad was included to support center-of-mass shifting and balance for future advanced gait control methods.
-  - Flexion/extension   (90-deg Flex/Ext)
+  - Flexion/extension   **(90-deg Flex/Ext)**
 - One degree of freedom at each knee:
-  - Flexion/extension (112-deg Flex/Ext)
+  - Flexion/extension **(112-deg Flex/Ext)**
 
 <div class="project-gallery">
   <div class="gallery-item">
     <h4>Hip Abad Motion Study</h4>
     <video autoplay loop muted playsinline controls>
-      <source src="/images/Rudy_Hip_Abad.mp4" type="video/mp4">
+      <source src="/images/Rudy_Abad.mp4" type="video/mp4">
       Your browser does not support the video tag.
     </video>
   </div>
@@ -96,22 +170,13 @@ https://github.com/ncknight-un/Quadruped_Rudy
 
 ### Electronics Setup
 
-- See the **Circuit Diagram** below for the digital electronics and power distribution layout.
+- See the **Electronics Layout** below for the digital electronics and power distribution.
 - Each motor is daisy-chained to the **U2D2 Power Hub Board**, which distributes power and communication to all servos.
 - The U2D2 also provides the interface between the motors and the control computer.
 
-**Key components include:**
-
-- Dynamixel XL430 and 2XL430 motors
-- Raspberry Pi 4 as the main ROS controller
-- U2D2 TTL adapter for Dynamixel bus communication
-- 3S 5000 mAh LiPo battery
-- IMU for orientation feedback
-- Ultrasonic sensor + LED for basic obstacle detection
-
   <div class="gallery-item">
-    <h4>Circuit Diagram</h4>
-    <img src="/images/Rudy_Circuit.png" alt="Circuit Diagram">
+    <h4>Electronics Layout</h4>
+    <img src="/images/Rudy_Elec_Layout.jpeg" alt="Circuit Diagram">
   </div>
 
 --- 
@@ -121,96 +186,18 @@ https://github.com/ncknight-un/Quadruped_Rudy
 - The robot runs **Ubuntu 24.04 LTS** with **ROS 2 Kilted** on a **Raspberry Pi 4-B+**.
 - Control logic is implemented using a **ROS 2 node** that generates joint trajectories and gait timing.
 - The current controller implements a **trot gait** using joint waypoint trajectories for a trot gait style.
-- Future work includes **inverse kinematics (IK)** and **Bezier trajectory-based gait generation**.
-
-#### ROS 2 Package Structure
-
-- **quadruped_behavior**
-  - Implements the **trot gait controller**
-  - Generates waypoint trajectories and handles ROS communication
-
-- **rudy_description**
-  - Contains the **URDF model** for the robot
-  - Provides tools for **URDF loading and RViz visualization**
-
-- **rudy_lib**
-  - Defines **leg and body kinematics**
-  - Utilities for **kinematics calculations**
+- Future work includes **kinematics** and **Bezier trajectory-based gait generation**.
 
   <div class="gallery-item">
-    <h4>Software Architecture</h4>
-    <img src="/images/Rudy_SystemArch2.jpeg" alt="System Arch">
+    <h4>Software/System Architecture</h4>
+    <img src="/images/Rudy_Arc.jpeg" alt="System Arch">
   </div>
-
---- 
-
-### Gait Generation
-
-- Implemented a **trot gait** using a single **ROS 2 node** that controls **Dynamixel motors** via the **Dynamixel SDK**, with a timer callback handling **joint state publication** and **waypoint actuation**.
-- **Future Work:** Complete the **body inverse kinematics (IK) package** for gait generation using **Bezier curve trajectories**.
-
-**Github Link:** <a href="https://github.com/ncknight-un/Quadruped_Rudy" target="_blank" rel="noopener noreferrer">
-https://github.com/ncknight-un/Quadruped_Rudy
-</a>
-
-<div class="project-gallery">
-
-  <div class="gallery-item">
-    <h4>Final Walking Demo - Joint Waypoints</h4>
-    <video autoplay loop muted playsinline controls>
-      <source src="/images/Rudy_BestWalk.mp4" type="video/mp4">
-      Your browser does not support the video tag.
-    </video>
-  </div>
-
-  <div class="gallery-item">
-    <h4>Walking Demo - Outdoors</h4>
-    <video autoplay loop muted playsinline controls>
-      <source src="/images/Rudy_Outside.mp4" type="video/mp4">
-      Your browser does not support the video tag.
-    </video>
-  </div>
-
-  <div class="gallery-item">
-    <h4>Initial Trot Gait Testing - Joint Waypoints</h4>
-    <video autoplay loop muted playsinline controls>
-      <source src="/images/Rudy_Trot1.mp4" type="video/mp4">
-      Your browser does not support the video tag.
-    </video>
-  </div>
-
-  <div class="gallery-item">
-    <h4>Initial Qausti-Static Gait Testing</h4>
-    <video autoplay loop muted playsinline controls>
-      <source src="/images/Rudy_QSgait1.mp4" type="video/mp4">
-      Your browser does not support the video tag.
-    </video>
-  </div>
-
-</div>
-<br>
 
 --- 
 
 ### Additional Media
 
 <div class="project-gallery">
-
-  <div class="gallery-item">
-    <h4>Complete ROS Service Static Poses</h4>
-    <video autoplay loop muted playsinline controls>
-      <source src="/images/Rudy_Poses2.mp4" type="video/mp4">
-      Your browser does not support the video tag.
-    </video>
-  </div>
-
-  <div class="gallery-item">
-    <h4>ROS Service Static Poses Test</h4>
-    <video autoplay loop muted playsinline controls>
-      <source src="/images/Rudy_StaticPoses.mp4" type="video/mp4">
-      Your browser does not support the video tag.
-    </video>
-  </div>
 
   <div class="gallery-item">
     <h4>Initial ROS 2 Testing</h4>
