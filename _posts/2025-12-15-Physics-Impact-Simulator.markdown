@@ -110,7 +110,7 @@ Many of these projects were done as a series of different assignments as a part 
 
 ---
 
-## Skills Gained:
+## Skills Improved:
 
 - Lagrangian and Hamiltonian Dynamics – Formulated equations of motion and applied energy-based approaches to complex systems.
 - Physics Simulation – Built symbolic and numerical simulations of dynamic systems with constraints and impacts.

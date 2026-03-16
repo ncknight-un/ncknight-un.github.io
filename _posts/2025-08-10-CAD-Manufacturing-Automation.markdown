@@ -135,7 +135,7 @@ I designed both the lathe and mill fixtures with size-specific mounting plates t
 
 ---
 
-## Skills Gained:
+## Skills Improved:
 
 - Automation & manufacturing principles  
 - CAD modeling and technical drawings expertise   

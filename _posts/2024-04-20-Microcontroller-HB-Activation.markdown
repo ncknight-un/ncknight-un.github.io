@@ -6,7 +6,7 @@ video: Fish_Controller.mp4
 tags:   Biofeedback C Embedded_Systems Microcontrollers Signal_Processing 
 ---
 
-This project involves the design and development of a bioinstrument that triggers motor movement in response to a person’s heartbeat. The system uses a microcontroller (MSP430-FR2355) to process ECG data, generating a digital signal that activates a motor to move a series of fish around a fish tank. To verify heartbeats, an LED flashes when a heartbeat is detected by the microcontroller. The device architecture combines hardware components like the MSP430 microprocessor, an ECG module, and a motor driver (TB6612FNG), which work together to control the motor's speed and direction.
+This project involved the design and development of a bioinstrument that triggers motor movement in response to a person’s heartbeat. The system uses a microcontroller (MSP430-FR2355) to process ECG data, generating a digital signal that activates a motor to move a series of fish around a fish tank. To verify heartbeats, an LED flashes when a heartbeat is detected by the microcontroller. The device architecture combines hardware components like the MSP430 microprocessor, an ECG module, and a motor driver (TB6612FNG), which work together to control the motor's speed and direction.
 
 The MSP430 microcontroller serves as the central processing unit, converting analog ECG signals into a digital output. This digital signal controls the motor through the motor driver, which is powered by the MSP430. The motor driver uses a PWM signal for speed control and a standby input to activate or deactivate the motor, depending on the voltage signal received. Additionally, the motor’s direction is adjusted using the AI1 and AI2 pins on the motor driver, which operate via an H-bridge mechanism.
 
@@ -54,7 +54,7 @@ https://github.com/ncknight-un/BioSense-Motor-Activation
 
 ---
 
-## Skills Gained:
+## Skills Improved:
 
 - Embedded system design and integration
 - Analog-to-digital signal conversion (ADC) for ECG data

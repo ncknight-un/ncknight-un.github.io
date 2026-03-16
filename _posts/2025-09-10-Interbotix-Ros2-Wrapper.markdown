@@ -5,7 +5,7 @@ date:   2025-09-10 09:00:00 +0300
 video: interbotix_grasp1.mp4
 tags:   Path_Planning Python ROS_2 Vision
 ---
-For this project, I developed a vision-guided robotic arm capable of detecting and retrieving a pen from a human hand. The system uses an Interbotix robotic arm controlled via a ROS2 wrapper with Python, integrating computer vision, kinematics, and motion planning to achieve precise grasping.
+Im this project, I developed a vision-guided robotic arm capable of detecting and retrieving a pen from a human hand. The system uses an Interbotix robotic arm controlled via a ROS2 wrapper with Python, integrating computer vision, kinematics, and motion planning to achieve precise grasping.
 
 The core challenge of this project was coordinating perception with manipulation: the arm must accurately detect the pen’s position and orientation in real time, plan a possible trajectory given the arms 5-DOF, and execute a smooth grasp. Python scripts interface with the ROS2 nodes to process camera input, compute target coordinates, and command the arm’s movements.
 
@@ -65,7 +65,7 @@ https://github.com/ncknight-un/Interbotix_Pen_Grasping
 
 ---
 
-## Skills Gained:
+## Skills Improved:
 
 - Perception: Integrated computer vision to detect objects of specific color and estimate their position and orientation using an Intel Realsense camera.
 - Python: Developed scripts to process vision data, plan trajectories, and command the robotic arm for specific tasks.

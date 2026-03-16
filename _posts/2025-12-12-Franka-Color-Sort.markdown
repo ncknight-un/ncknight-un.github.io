@@ -78,6 +78,8 @@ https://github.com/ncknight-un/Franka_Color_Sorting_MSR2025
   </div>
 </div>
 
+<br>
+
 ### Enclosure & CAD Designs:
 <p>
 I designed the Bug World in Fusion 360 to plan the sizing and shape before building it in wood, ensuring the environment was centered around the robot. I created an insert for consistent placement of a fixture between the robot base and wooden frame. Additionally, I designed a custom gripper to safely encapsulate round shells without hitting the ground frame, and added rounded corners and mounted AprilTag holders to maintain consistency in testing.
@@ -100,7 +102,7 @@ I designed the Bug World in Fusion 360 to plan the sizing and shape before build
 
   <div class="gallery-item">
     <h4>Custom Grippers for FER</h4>
-    <img src="/images/grippers.jpeg" alt="Grippers">
+    <img src="/images/claw.jpeg" alt="Grippers">
   </div>
   
   <div class="gallery-item">
@@ -117,7 +119,7 @@ I designed the Bug World in Fusion 360 to plan the sizing and shape before build
 
 ---
 
-## Skills Gained:
+## Skills Improved:
 
 - ROS 2 (node design, topic/service communication, launch files)
 - MoveIt motion planning and collision detection

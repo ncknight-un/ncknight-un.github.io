@@ -94,7 +94,7 @@ Pretrained models for both **GhostNet** and **GhostNet-CBAM** are included in St
 https://github.com/ncknight-un/GhostNet-Extended-CBAM
 </a>
 
-### Enclosure & CAD Designs:
+<br>
 
 <div class="project-gallery">
   <div class="gallery-item">

@@ -7,7 +7,7 @@
     flex-direction: row; // media left, content right
     flex-wrap: nowrap;   // one article per row
     align-items: flex-start; // top align media and content
-    gap: 20px; // spacing between media and content
+    gap: 30px; // spacing between media and content
     margin-bottom: 40px;
     align-items: center;
     justify-content: center; // horizontally centers the wrapper contents
@@ -25,7 +25,7 @@
     background-position: center;
     background-repeat: no-repeat; 
     aspect-ratio: 16 / 9;
-    max-height: 250px;
+    max-height: 285px;
     &:hover {
       opacity: 0.9;
     }
@@ -41,7 +41,7 @@
 
   .article__content {
     width: 55%; // match remaining width
-    padding: 50px;
+    padding: 60px;
     margin-left: -5%;
     z-index: 1;
     border-radius: 3px;

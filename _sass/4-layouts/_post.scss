@@ -262,12 +262,17 @@
       text-transform: uppercase;
       letter-spacing: 1px;
     }
-
-    img,
-    video {
-      width: 426x;
-      height: 240px;
+    img {
+      width: 480px;
+      height: 270px;
       object-fit: scale-down;
+      margin: 0 auto;
+      display: block;
+    }
+    video {
+      width: 480px;
+      height: 270px;
+      object-fit: fill;
       margin: 0 auto;
       display: block;
     }
