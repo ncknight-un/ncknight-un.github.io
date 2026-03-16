@@ -123,7 +123,7 @@ https://github.com/ncknight-un/Quadruped_Rudy
 
 ---
 
-### Range of Motion Design
+### Range of Motion Evaluation
 
 - Two degrees of freedom at each hip:
   - Abduction/adduction **(15-deg Abd / 65-deg add)**
@@ -142,7 +142,7 @@ https://github.com/ncknight-un/Quadruped_Rudy
 
 ---
 
-### Electronics Setup
+### Electronics Setup & Design
 
 - See the **Electronics Layout** below for the digital electronics and power distribution.
 - Each motor is daisy-chained to the **U2D2 Power Hub Board**, which distributes power and communication to all servos.
