@@ -6,16 +6,11 @@ video: Final_Video_Robot.mp4
 tags:  CAD Franka Git Path_Planning Python ROS_2 Rviz Vision Simulation 3D_Printing
 ---
 
+As part of a team, I developed a modular motion planning and manipulation system for the FER Panda robotic arm to autonomously pick up and sort colored objects (“Turtles”) in both simulated and real laboratory environments. The system leverages ROS 2 and MoveIt for collision-aware motion planning, task execution, and real-time visualization.
 
-As a team, I helped develop a modular motion planning and manipulation system for the FER Panda robotic arm to autonomously pick up and sort colored objects (“Turtles”) in both simulated and real laboratory environments. The system leverages ROS 2 and MoveIt to perform collision-aware motion planning, task execution, and real-time visualization.
-
-The project introduces a custom MotionPlanningInterface composed of three tightly integrated subsystems—RobotState, MotionPlanner, and PlanningScene—which coordinate through MoveIt to generate safe, efficient trajectories while accounting for static environmental obstacles. Object detection and state feedback are visualized in RViz, where detected colored objects are displayed in real time and the current target is highlighted with a larger black cube.
-
-Beyond motion planning, the system incorporates a TargetDecision node and a Sort node that use vision-based inputs to identify object locations, assign retrieval tasks, and place each object into a predefined home base position. This architecture enables flexible task sequencing and clear separation between perception, planning, and execution.
-
-As an extension, the project explores real-time sorting of moving objects using Hex-Bug–powered turtles. To handle dynamic targets, a low-latency control pathway was implemented via the fer_arm_controller, bypassing MoveIt and directly commanding joint trajectories. This enables continuous target tracking and responsive manipulation, significantly increasing task complexity and realism. This task is still being explored as the highly non-linear paths of the turtles create complexity to the system.
-
-This project demonstrates end-to-end robotic manipulation, combining perception, planning, control, and real-time visualization, and serves as a strong foundation for further research into dynamic motion planning and autonomous sorting systems!
+**Github Link:** <a href="https://github.com/ncknight-un/Franka_Color_Sorting_MSR2025" target="_blank" rel="noopener noreferrer">
+https://github.com/ncknight-un/Franka_Color_Sorting_MSR2025
+</a>
 
 --- 
 
@@ -26,8 +21,8 @@ This project demonstrates end-to-end robotic manipulation, combining perception,
 ---
 
 ### Team Members:
-**Miguel Pigues**: 
-
+**Miguel Pigues**: <a href="https://tmpegues.github.io/" target="_blank" rel="noopener noreferrer">
+https://tmpegues.github.io 
 
 **Halley Zhong**:  <a href="https://halleyscomet-99.github.io/" target="_blank" rel="noopener noreferrer">
 https://halleyscomet-99.github.io
@@ -36,14 +31,6 @@ https://halleyscomet-99.github.io
 https://rishika2024.github.io
 
 ---
-
-## Project Gallery
-
-**Github Link:** <a href="https://github.com/ncknight-un/Franka_Color_Sorting_MSR2025" target="_blank" rel="noopener noreferrer">
-https://github.com/ncknight-un/Franka_Color_Sorting_MSR2025
-</a>
-
-**Note: I have shared all CAD files to this public repository! Feel free to build off of them!**
 
 ### Project Demo Vidoes: 
 <div class="project-gallery">
@@ -80,10 +67,63 @@ https://github.com/ncknight-un/Franka_Color_Sorting_MSR2025
 
 <br>
 
+---
+
+### System Architecture
+
+The system is built around a custom **MotionPlanningInterface**, composed of three core subsystems:
+
+- **RobotState** – Maintains the robot’s current state  
+- **MotionPlanner** – Generates collision-free trajectories  
+- **PlanningScene** – Represents the environment and obstacles  
+
+These components integrate through MoveIt to produce safe and efficient motion plans while accounting for static obstacles.
+
+---
+
+### Perception & Visualization
+
+- Object detection is integrated into the pipeline using vision-based inputs  
+- Detected colored objects are visualized in RViz in real time  
+- The active target is highlighted for clarity during execution  
+
+---
+
+### Task Planning & Execution
+
+The system includes higher-level coordination through:
+
+- **TargetDecision Node** – Identifies and selects objects to retrieve  
+- **Sort Node** – Assigns placement locations and executes sorting logic  
+
+This structure enables:
+- Clear separation between perception, planning, and execution  
+- Flexible and modular task sequencing  
+
+---
+
+### Dynamic Object Tracking (Extension Work)
+
+An extended feature explores real-time sorting of moving objects using Hexbug-powered turtles.
+
+- Implemented a low-latency control pathway via `fer_arm_controller`  
+- Bypasses MoveIt to directly command joint trajectories  
+- Enables continuous tracking of dynamic targets  
+
+This significantly increases system complexity, as the non-linear motion of the turtles introduces challenges in prediction and control. This area remains under active development.
+
+---
+
 ### Enclosure & CAD Designs:
-<p>
-I designed the Bug World in Fusion 360 to plan the sizing and shape before building it in wood, ensuring the environment was centered around the robot. I created an insert for consistent placement of a fixture between the robot base and wooden frame. Additionally, I designed a custom gripper to safely encapsulate round shells without hitting the ground frame, and added rounded corners and mounted AprilTag holders to maintain consistency in testing.
-</p>
+
+- Designed the enclosure in Fusion360 to plan layout prior to construction, ensuring alignment with the robot workspace  
+- **Migeul Pegues** Created a custom insert to ensure repeatable placement of the fixture between the robot base and frame  
+- Designed a custom gripper to securely grasp round shells while avoiding collisions with the ground frame  
+- Added rounded corners to improve safety and prevent corner trappong during operation  
+- Integrated mounted AprilTag holders to ensure consistent perception and repeatable testing conditions  
+
+**Note: I have shared all CAD files to this public repository! Feel free to build off of them!**
+
 <div class="project-gallery">
   <div class="gallery-item">
     <h4>World Model (PreBuild)</h4>
@@ -121,15 +161,15 @@ I designed the Bug World in Fusion 360 to plan the sizing and shape before build
 
 ## Skills Improved:
 
-- ROS 2 (node design, topic/service communication, launch files)
-- MoveIt motion planning and collision detection
-- Robotic manipulation with the Franka Emika Panda (FER Panda)
-- Motion planning scene design and obstacle modeling
-- Vision-based object detection and task assignment
-- Real-time visualization and debugging with RViz
-- Modular robotics software architecture
-- Joint trajectory control for real-time target tracking
-- Integration of perception, planning, and control pipelines
+- ROS 2 (nodes, topics/services, launch files)  
+- MoveIt (motion planning and collision avoidance)  
+- Robotic manipulation (Franka Emika Panda)  
+- Motion planning and environment modeling  
+- Vision-based object detection and task execution  
+- Real-time visualization (RViz)  
+- Modular robotics system design  
+- Joint trajectory control for dynamic tracking  
+- Integrated perception, planning, and control
 
 ---
 

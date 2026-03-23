@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Rudy: Quadruped From Scratch"
-date:   2026-03-10 09:00:00 +0300
+date:   2026-03-20 09:00:00 +0300
 video: Rudy_FinalVid7.mp4
 tags:  CAD Dynamixel Embedded_Systems Microcontrollers ROS_2 Quadrupeds 3D_Printing
 ---

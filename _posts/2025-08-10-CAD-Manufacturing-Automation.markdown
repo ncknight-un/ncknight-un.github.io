@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "CAD: Automated Manufacturing"
+title:  "Automated Manufacturing Cell Design"
 date:   2025-08-10 09:00:00 +0300
 video: Layout1.mp4
 tags:   Automation CAD Cobots Lathe Manufacturing Milling 
