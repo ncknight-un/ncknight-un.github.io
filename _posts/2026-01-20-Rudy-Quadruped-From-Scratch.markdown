@@ -2,7 +2,7 @@
 layout: post
 title:  "Rudy: Quadruped From Scratch"
 date:   2026-03-20 09:00:00 +0300
-video: Rudy_FinalVid7.mp4
+video: Rudy_Traj_Update.mp4
 tags:  CAD Dynamixel Embedded_Systems Microcontrollers ROS_2 Quadrupeds 3D_Printing
 ---
 
@@ -59,6 +59,14 @@ https://github.com/ncknight-un/Quadruped_Rudy
 
 </div>
 <br>
+
+<div class="gallery-item">
+  <h4>Trot Gait Simulation</h4>
+      <video autoplay loop muted playsinline controls>
+      <source src="/images/Leg_Simulation.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+</div>
 
 --- 
 
