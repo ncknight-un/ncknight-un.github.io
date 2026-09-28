@@ -10,7 +10,7 @@ I'd love to connect! I'm always open to discussing robotics projects, research c
 
 **Email:** [nolanknight133@icloud.com](mailto:nolanknight133@icloud.com)  
 **Phone:** +1 (574) 453-7472  
-**LinkedIn:** [linkedin.com/in/nolan-knight-bu](https://linkedin.com/in/nolan-knight-bu)  
+**LinkedIn:** [linkedin.com/in/nolan-knight-nu](https://linkedin.com/in/nolan-knight-nu)  
 **GitHub:** [https://github.com/ncknight-un](https://github.com/ncknight-un)
 
 

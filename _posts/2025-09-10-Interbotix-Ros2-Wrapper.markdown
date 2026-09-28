@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "Autonomous Pen Grasping"
-date:   2025-09-10 09:00:00 +0300
+title:  "Computer Vision Assisted Object Localization & Grasping"
+date:   2025-12-10 09:00:00 +0300
 video: interbotix_grasp1.mp4
 tags:   Path_Planning Python ROS_2 Vision
 ---
