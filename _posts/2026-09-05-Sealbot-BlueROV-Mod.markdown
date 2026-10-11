@@ -1,8 +1,8 @@
 ---
 layout: post
-title:  "Sealbot 2.0: BlueROV Mod for Flow Detection and Feedback Control"
+title:  "Sealbot 2.0: BlueROV Mod for Flow Detection and State Estimation using Whiskers"
 date:   2026-09-05 09:00:00 +0300
-video: Sealbot_Init_Bouy_Test.mp4
+video: Sealbot_drive.mp4
 tags:  CAD Embedded_Systems ROS_2 Jetson_Orin 3D_Printing Machining
 ---
 
@@ -101,11 +101,60 @@ Sealbot 2.0 system architecture consists of a station PC, the BlueROV Raspberry 
   <img src="/images/sealbot_arch_clean.svg" alt="System Architecture">
 </div>
 
-**Data flow:**
-1. Station PC → [Manual control commands during data collection]
-3. Jetson Orin Nano → [Whisker Detections, Camera Bringup/Light PWM Control, MAVROS Publishing, ROSbag]
+<div class="gallery-item">
+  <h4>Embedded Attachment Circuit Diagram</h4>
+  <img src="/images/Sealbot_Circuit_v4.svg" alt="Circuit Diagram">
+</div>
 
 ---
+
+### Software & Embedded Design
+
+- The system runs **Ubuntu 22.04 LTS** with **ROS 2 Humble** on a **Jetson Orin Nano**.
+- Control logic is implemented using **ROS 2 nodes** that manage camera bringup, time synchronization, and whisker array detection.
+- **Station PC:** [Ubuntu 24.04 LTS, ROS2 Humble, Docker]
+- **Jetson Orin Nano:** [Ubuntu 22.04, ROS2 Humble]
+- **Networking:** [DDS - Cyclone DDS, ROS_DOMAIN_ID - 16, static IPs - 192.168.2.0/24 (BlueROV)]
+<!-- - **Time synchronization:** [ Plan to use chrony for Time Sync] -->
+
+**Key ROS 2 Nodes / Topics:**
+
+<table width="100%">
+  <thead>
+    <tr>
+      <th width="25%" align="center">Node</th>
+      <th width="25%" align="center">Runs On</th>
+      <th width="25%" align="center">Publishes</th>
+      <th width="25%" align="center">Subscribes</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td align="center"> Camera Bringup</td>
+      <td align="center"> Jetson Orin Nano </td>
+      <td align="center"> Camera Info/Image Raw </td>
+      <td align="center"> None </td>
+    </tr>
+  </tbody>
+  <tbody>
+    <tr>
+      <td align="center"> Apriltag Bringup</td>
+      <td align="center"> Jetson Orin Nano </td>
+      <td align="center"> April Tag Detections</td>
+      <td align="center"> Camera Image Raw </td>
+    </tr>
+  </tbody>
+  <tbody>
+    <tr>
+      <td align="center"> Whisker Visualization</td>
+      <td align="center"> PC Station </td>
+      <td align="center"> Marker Arrays </td>
+      <td align="center"> April Tag Detections </td>
+    </tr>
+  </tbody>
+</table>
+
+--- 
 
 ### Hardware Overview
 
@@ -185,54 +234,6 @@ Sealbot 2.0 system architecture consists of a station PC, the BlueROV Raspberry 
 </div>
 
 ---
-
-### Software & Embedded Design
-
-- The system runs **Ubuntu 22.04 LTS** with **ROS 2 Humble** on a **Jetson Orin Nano**.
-- Control logic is implemented using **ROS 2 nodes** that manage camera bringup, time synchronization, and whisker array detection.
-- **Station PC:** [Ubuntu 24.04 LTS, ROS2 Humble, Docker]
-- **Jetson Orin Nano:** [Ubuntu 22.04, ROS2 Humble]
-- **Networking:** [DDS - Cyclone DDS, ROS_DOMAIN_ID - 16, static IPs - 192.168.2.0/24 (BlueROV)]
-<!-- - **Time synchronization:** [ Plan to use chrony for Time Sync] -->
-
-**Key ROS 2 Nodes / Topics:**
-
-<table width="100%">
-  <thead>
-    <tr>
-      <th width="25%" align="center">Node</th>
-      <th width="25%" align="center">Runs On</th>
-      <th width="25%" align="center">Publishes</th>
-      <th width="25%" align="center">Subscribes</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td align="center"> Camera Bringup</td>
-      <td align="center"> Jetson Orin Nano </td>
-      <td align="center"> Camera Info/Image Raw </td>
-      <td align="center"> None </td>
-    </tr>
-  </tbody>
-  <tbody>
-    <tr>
-      <td align="center"> Apriltag Bringup</td>
-      <td align="center"> Jetson Orin Nano </td>
-      <td align="center"> April Tag Detections</td>
-      <td align="center"> Camera Image Raw </td>
-    </tr>
-  </tbody>
-  <tbody>
-    <tr>
-      <td align="center"> Whisker Visualization</td>
-      <td align="center"> PC Station </td>
-      <td align="center"> Marker Arrays </td>
-      <td align="center"> April Tag Detections </td>
-    </tr>
-  </tbody>
-</table>
-
---- 
 
 ### BlueROV Modification CAD Design
 
